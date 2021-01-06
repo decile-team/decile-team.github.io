@@ -405,6 +405,10 @@ figure {
     text-align: center
 }
 
+.align-justify {
+    text-align: justify
+}
+
 .bg-image {
     position: relative
 }
