@@ -1955,3 +1955,180 @@ body.has-theme-bar #site-wrap {
     outline: rgb(51, 58, 64) none 0px;
 }/*#DIV_9:before*/
 
+#CARD_1 {
+    block-size: 239.6px;
+    box-sizing: border-box;
+    height: 239.6px;
+    inline-size: auto;
+    min-block-size: auto;
+    min-height: auto;
+    min-inline-size: auto;
+    min-width: auto;
+
+    width: auto;
+    font: 16px Muli, sans-serif;
+}/*#CARD_1*/
+
+#CARD_1:after {
+    font: 16px Muli, sans-serif;
+}/*#CARD_1:after*/
+
+#CARD_1:before {
+    font: 16px Muli, sans-serif;
+}/*#CARD_1:before*/
+
+#CARD_2 {
+    block-size: 199.6px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 10px 0px;
+    box-sizing: border-box;
+    display: flex;
+    height: 199.6px;
+    inline-size: 700px;
+    margin-block-end: 20px;
+    margin-block-start: 20px;
+    margin-inline-end: 20px;
+    margin-inline-start: 20px;
+    max-inline-size: 100%;
+    max-width: auto;
+    perspective-origin: 350px 99.8px;
+    transform-origin: 350px 99.8px;
+    width: auto;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+    border-radius: 10px;
+    font: 16px Muli, sans-serif;
+    margin: 20px;
+    overflow: hidden;
+}/*#CARD_2*/
+
+#CARD_2:after {
+    display: block;
+    font: 16px Muli, sans-serif;
+}/*#CARD_2:after*/
+
+#CARD_2:before {
+    display: block;
+    font: 16px Muli, sans-serif;
+}/*#CARD_2:before*/
+
+#CARD_3 {
+    block-size: 199.6px;
+    bottom: 0px;
+    box-sizing: border-box;
+    height: 199.6px;
+    inline-size: 454.413px;
+    inset-block-end: 0px;
+    inset-block-start: 0px;
+    inset-inline-end: 0px;
+    inset-inline-start: 0px;
+    left: 0px;
+    min-block-size: auto;
+    min-height: auto;
+    min-inline-size: auto;
+    min-width: auto;
+    padding-block-end: 30px;
+    padding-block-start: 30px;
+    padding-inline-end: 30px;
+    padding-inline-start: 30px;
+    perspective-origin: 227.2px 99.8px;
+    position: relative;
+    right: 0px;
+    top: 0px;
+    transform-origin: 227.206px 99.8px;
+    width: 454.413px;
+    font: 16px Muli, sans-serif;
+    padding: 30px;
+}/*#CARD_3*/
+
+#CARD_3:after {
+    font: 16px Muli, sans-serif;
+}/*#CARD_3:after*/
+
+#CARD_3:before {
+    font: 16px Muli, sans-serif;
+}/*#CARD_3:before*/
+
+#CARD_4 {
+    block-size: 25px;
+    bottom: 144.6px;
+    box-sizing: border-box;
+    height: 25px;
+    inline-size: 150px;
+    inset-block-end: 144.6px;
+    inset-block-start: 30px;
+    inset-inline-end: 30px;
+    inset-inline-start: 274.413px;
+    left: 274.413px;
+    perspective-origin: 75px 12.5px;
+    position: absolute;
+    right: 30px;
+    text-align: right;
+    top: 30px;
+    transform-origin: 75px 12.5px;
+    width: 150px;
+    font: 16px Muli, sans-serif;
+}/*#CARD_4*/
+
+#CARD_4:after {
+    text-align: right;
+    font: 16px Muli, sans-serif;
+}/*#CARD_4:after*/
+
+#CARD_4:before {
+    text-align: right;
+    font: 16px Muli, sans-serif;
+}/*#CARD_4:before*/
+
+#CARD_H1 {
+    block-size: 12.8px;
+    box-sizing: border-box;
+    height: 12.8px;
+    inline-size: 394.413px;
+    letter-spacing: 1px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    opacity: 0.6;
+    perspective-origin: 197.2px 6.4px;
+    text-transform: uppercase;
+    transform-origin: 197.206px 6.4px;
+    width: 394.413px;
+    font: 700 10.72px Muli, sans-serif;
+    margin: 0px;
+    color: black;
+}/*#CARD_H1*/
+
+#CARD_H1:after {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font: 700 10.72px Muli, sans-serif;
+}/*#CARD_H1:after*/
+
+#CARD_H1:before {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font: 700 10.72px Muli, sans-serif;
+}/*#CARD_H1:before*/
+
+#H2_13 {
+    block-size: 30.4px;
+    box-sizing: border-box;
+    height: 30.4px;
+    inline-size: 394.413px;
+    letter-spacing: 1px;
+
+    perspective-origin: 197.2px 15.2px;
+    transform-origin: 197.206px 15.2px;
+    width: 394.413px;
+    font: 700 24px Muli, sans-serif;
+    margin: 10px 0px;
+    color: black;
+}/*#H2_13*/
+
+#H2_13:after {
+    letter-spacing: 1px;
+    font: 700 24px Muli, sans-serif;
+}/*#H2_13:after*/
+
+#H2_13:before {
+    letter-spacing: 1px;
+    font: 700 24px Muli, sans-serif;
+}/*#H2_13:before*/
