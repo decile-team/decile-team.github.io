@@ -1958,7 +1958,7 @@ body.has-theme-bar #site-wrap {
 #CARD_1 {
     block-size: 239.6px;
     box-sizing: border-box;
-    height: 239.6px;
+    height: 120px;
     inline-size: auto;
     min-block-size: auto;
     min-height: auto;
@@ -1978,11 +1978,11 @@ body.has-theme-bar #site-wrap {
 }/*#CARD_1:before*/
 
 #CARD_2 {
-    block-size: 199.6px;
+    block-size: 80px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 10px 0px;
     box-sizing: border-box;
     display: flex;
-    height: 199.6px;
+    height: 80px;
     inline-size: 700px;
     margin-block-end: 20px;
     margin-block-start: 20px;
