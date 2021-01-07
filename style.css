@@ -403,7 +403,10 @@ figure {
 
 .align-center {
     text-align: center
+
 }
+
+
 
 .align-justify {
     text-align: justify
@@ -2518,8 +2521,8 @@ image-padding
         } 
         
         .x-col.gc_ai_build:after { 
-            background: url(https://www.snorkel.ai/wp-content/uploads/2020/09/snorkel-stripe-1.png) -62px -10px; 
-            background-image: url("https://www.snorkel.ai/wp-content/uploads/2020/09/snorkel-stripe-1.png"); 
+            background: url() -62px -10px; 
+            background-image: url(""); 
             background-position-x: -62px; 
             background-position-y: -10px; 
             background-size: initial; 
@@ -2569,8 +2572,8 @@ image-padding
         }     
         
         .x-col.gc_ai_dev:after { 
-            background: url(https://www.snorkel.ai/wp-content/uploads/2020/09/snorkel-stripe-1.png) -10px -10px; 
-            background-image: url("https://www.snorkel.ai/wp-content/uploads/2020/09/snorkel-stripe-1.png"); 
+            background: url() -10px -10px; 
+            background-image: url(""); 
             background-position-x: -10px; 
             background-position-y: -10px; 
             background-size: initial; 
@@ -2622,8 +2625,8 @@ image-padding
         }     
         
         .x-col.gc_ai_data:after { 
-            background: url(https://www.snorkel.ai/wp-content/uploads/2020/09/snorkel-stripe-1.png) -10px -62px; 
-            background-image: url("https://www.snorkel.ai/wp-content/uploads/2020/09/snorkel-stripe-1.png"); 
+            background: url() -10px -62px; 
+            background-image: url(""); 
             background-position-x: -10px; 
             background-position-y: -62px; 
             background-size: initial; 
@@ -2675,8 +2678,8 @@ image-padding
         }     
         
         .x-col.gc_ai_fuel:after { 
-            background: url(https://www.snorkel.ai/wp-content/uploads/2020/09/snorkel-stripe-1.png) -62px -62px; 
-            background-image: url("https://www.snorkel.ai/wp-content/uploads/2020/09/snorkel-stripe-1.png"); 
+            background: url() -62px -62px; 
+            background-image: url(""); 
             background-position-x: -62px; 
             background-position-y: -62px; 
             background-size: initial; 
@@ -2784,3 +2787,10 @@ image-padding
         
         
     
+        .align-center-icon {
+            
+        
+          text-align: center;
+        
+        
+        }
