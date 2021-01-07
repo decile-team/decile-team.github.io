@@ -1247,7 +1247,13 @@ body.has-theme-bar #site-wrap {
 
 @media (min-width:801px) {
     .section__media--right {
-        order: 1
+        order: 1;
+    }
+    .image-padding
+    {
+        padding-left: 80px;
+
+
     }
 }
 
@@ -1261,6 +1267,14 @@ body.has-theme-bar #site-wrap {
         justify-content: center
     }
 }
+
+image-padding
+{
+    right: 1000; position: absolute; right: 0%
+
+
+}
+
 #DIV_1 {
     align-items: stretch;
     block-size: 510px;
@@ -2131,3 +2145,314 @@ body.has-theme-bar #site-wrap {
     letter-spacing: 1px;
     font: 700 24px Muli, sans-serif;
 }/*#H2_13:before*/
+
+@font-face { 
+    font-family:'Open Sans';
+    font-style:normal;
+    font-weight:400;
+    src:url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFWJ0bbck.woff2) format('woff2');
+    unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    } 
+    @font-face { 
+    font-family:'Open Sans';
+    font-style:normal;
+    font-weight:400;
+    src:url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFUZ0bbck.woff2) format('woff2');
+    unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    } 
+    @font-face { 
+    font-family:'Open Sans';
+    font-style:normal;
+    font-weight:400;
+    src:url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFWZ0bbck.woff2) format('woff2');
+    unicode-range:U+1F00-1FFF;
+    } 
+    @font-face { 
+    font-family:'Open Sans';
+    font-style:normal;
+    font-weight:400;
+    src:url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVp0bbck.woff2) format('woff2');
+    unicode-range:U+0370-03FF;
+    } 
+    @font-face { 
+    font-family:'Open Sans';
+    font-style:normal;
+    font-weight:400;
+    src:url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFWp0bbck.woff2) format('woff2');
+    unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    } 
+    @font-face { 
+    font-family:'Open Sans';
+    font-style:normal;
+    font-weight:400;
+    src:url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFW50bbck.woff2) format('woff2');
+    unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    } 
+    @font-face { 
+    font-family:'Open Sans';
+    font-style:normal;
+    font-weight:400;
+    src:url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+    unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    } 
+    *, :after, :before { 
+        box-sizing: border-box;
+    } 
+    
+    .row { 
+        display: -ms-flexbox; 
+        display: flex; 
+        -ms-flex-wrap: wrap; 
+        flex-wrap: wrap; 
+        margin-right: -15px; 
+        margin-left: -15px;
+    } 
+    
+    .container { 
+        width: 100%; 
+        padding-right: 15px; 
+        padding-left: 15px; 
+        margin-right: auto; 
+        margin-left: auto;
+    } 
+    
+    @media (min-width: 576px){     
+    .container { 
+        max-width: 540px;
+    } 
+    }     
+    
+    @media (min-width: 768px){     
+    .container { 
+        max-width: 720px;
+    } 
+    }     
+    
+    @media (min-width: 992px){     
+    .container { 
+        max-width: 960px;
+    } 
+    }     
+    
+    @media (min-width: 1200px){     
+    .container { 
+        max-width: 1140px;
+    } 
+    }     
+    
+    article, aside, figcaption, figure, footer, header, hgroup, main, nav, section { 
+        display: block;
+    } 
+    
+    .section-padding { 
+        padding: 60px 0; 
+        padding-top: 60px; 
+        padding-right: 0px; 
+        padding-bottom: 60px; 
+        padding-left: 0px;
+    } 
+    
+    body { 
+        margin: 0; 
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; 
+        font-size: 1rem; 
+        font-weight: 400; 
+        line-height: 1.5; 
+        color: #212529; 
+        text-align: left; 
+        background-color: #fff; 
+        margin-top: 0px; 
+        margin-right: 0px; 
+        margin-bottom: 0px; 
+        margin-left: 0px;
+    } 
+    
+    body { 
+        background: #fff; 
+        font-size: 14px; 
+        font-weight: 400; 
+        font-family: 'Open Sans', sans-serif; 
+        -webkit-box-sizing: border-box; 
+        -moz-box-sizing: border-box; 
+        box-sizing: border-box; 
+        -webkit-font-smoothing: subpixel-antialiased; 
+        color: #333333; 
+        line-height: 25px; 
+        -webkit-backface-visibility: hidden; 
+        backface-visibility: hidden; 
+        overflow-x: hidden; 
+        background-image: initial; 
+        background-position-x: initial; 
+        background-position-y: initial; 
+        background-size: initial; 
+
+        background-attachment: initial; 
+        background-origin: initial; 
+        background-clip: initial; 
+        background-color: rgb(255, 255, 255);
+    } 
+    
+    html { 
+        font-family: sans-serif; 
+        line-height: 1.15; 
+        -webkit-text-size-adjust: 100%; 
+        -ms-text-size-adjust: 100%; 
+        -ms-overflow-style: scrollbar; 
+        -webkit-tap-highlight-color: transparent; 
+        text-size-adjust: 100%;
+    } 
+    
+    html { 
+        overflow-x: hidden;
+    } 
+    
+    :root { 
+        --blue: #007bff; 
+        --indigo: #6610f2; 
+        --purple: #6f42c1; 
+        --pink: #e83e8c; 
+        --red: #dc3545; 
+        --orange: #fd7e14; 
+        --yellow: #ffc107; 
+        --green: #28a745; 
+        --teal: #20c997; 
+        --cyan: #17a2b8; 
+        --white: #fff; 
+        --gray: #6c757d; 
+        --gray-dark: #343a40; 
+        --primary: #007bff; 
+        --secondary: #6c757d; 
+        --success: #28a745; 
+        --info: #17a2b8; 
+        --warning: #ffc107; 
+        --danger: #dc3545; 
+        --light: #f8f9fa; 
+        --dark: #343a40; 
+        --breakpoint-xs: 0; 
+        --breakpoint-sm: 576px; 
+        --breakpoint-md: 768px; 
+        --breakpoint-lg: 992px; 
+        --breakpoint-xl: 1200px; 
+        --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; 
+        --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    } 
+    
+    .paper { 
+        text-align: left; 
+        margin: 5px; 
+        border: 1px solid rgba(0, 0, 0, 0.1); 
+        border-radius: 5px; 
+        padding: 10px; 
+        margin-top: 5px; 
+        margin-right: 5px; 
+        margin-bottom: 5px; 
+        margin-left: 5px; 
+        border-top-width: 1px; 
+        border-right-width: 1px; 
+        border-bottom-width: 1px; 
+        border-left-width: 1px; 
+        border-top-style: solid; 
+        border-right-style: solid; 
+        border-bottom-style: solid; 
+        border-left-style: solid; 
+        border-top-color: rgba(0, 0, 0, 0.1); 
+        border-right-color: rgba(0, 0, 0, 0.1); 
+        border-bottom-color: rgba(0, 0, 0, 0.1); 
+        border-left-color: rgba(0, 0, 0, 0.1); 
+        border-image-source: initial; 
+        border-image-slice: initial; 
+        border-image-width: initial; 
+        border-image-outset: initial; 
+        border-image-repeat: initial; 
+        border-top-left-radius: 5px; 
+        border-top-right-radius: 5px; 
+        border-bottom-right-radius: 5px; 
+        border-bottom-left-radius: 5px; 
+        padding-top: 10px; 
+        padding-right: 10px; 
+        padding-bottom: 10px; 
+        padding-left: 10px;
+    } 
+    
+    a { 
+        color: #007bff; 
+        text-decoration: none; 
+        background-color: transparent; 
+        -webkit-text-decoration-skip: objects; 
+        text-decoration-line: none; 
+        text-decoration-thickness: initial; 
+        text-decoration-style: initial; 
+        text-decoration-color: initial;
+    } 
+    
+    a { 
+        -webkit-transition: all 0.2s linear; 
+        -moz-transition: all 0.2s linear; 
+        -o-transition: all 0.2s linear; 
+        transition: all 0.2s linear; 
+        transition-duration: 0.2s; 
+        transition-timing-function: linear; 
+        transition-delay: 0s; 
+        transition-property: all;
+    } 
+    
+    .paper-title { 
+        font-weight: 900;
+    } 
+    
+    a:hover { 
+        color: #0056b3; 
+        text-decoration: underline; 
+        text-decoration-line: underline; 
+        text-decoration-thickness: initial; 
+        text-decoration-style: initial; 
+        text-decoration-color: initial;
+    } 
+    
+    a:hover { 
+        text-decoration: none; 
+        text-decoration-line: none; 
+        text-decoration-thickness: initial; 
+        text-decoration-style: initial; 
+        text-decoration-color: initial;
+    } 
+    
+    p { 
+        margin-top: 0; 
+        margin-bottom: 1rem;
+    } 
+    
+    p { 
+        font-weight: 400; 
+        font-family: 'Open Sans', sans-serif; 
+        margin: 0px; 
+        font-size: 14px; 
+        margin-top: 0px; 
+        margin-right: 0px; 
+        margin-bottom: 0px; 
+        margin-left: 0px;
+    } 
+    
+    .paper-authors, .paper-conference { 
+        margin: 0; 
+        padding: 0; 
+        color: #545454; 
+        font-size: 0.95em; 
+        margin-top: 0px; 
+        margin-right: 0px; 
+        margin-bottom: 0px; 
+        margin-left: 0px; 
+        padding-top: 0px; 
+        padding-right: 0px; 
+        padding-bottom: 0px; 
+        padding-left: 0px;
+    }
+    .d-flex{
+        display:-ms-flexbox!important;
+        display:flex!important
+    }
+    .my-auto{margin-top:auto!important}
+    .my-auto{margin-bottom:auto!important}
+    .flex-grow-1{-ms-flex-positive:1!important;flex-grow:1!important}
+    .px-4{padding-left:1.5rem!important}
+    .px-4{padding-right:1.5rem!important}
