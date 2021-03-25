@@ -2794,3 +2794,219 @@ image-padding
         
         
         }
+
+        .flex.flex-4 .box {
+			width: 21%;
+		}
+		@media screen and (max-width: 480px) {
+
+			.flex.flex-4 .box {
+				width: 100%;
+			}
+
+		}
+        .flex.flex-4 .box {
+			width: 21%;
+		}
+
+    
+        #header .inner {
+			margin: 0 auto;
+			position: relative;
+		}
+        section.customwrapper, article.customwrapper {
+            padding: 8em 0;
+            padding-left:30em ;
+            padding-right:30em ;
+    
+        }
+    
+        section.special, article.special {
+            text-align: center;
+        }
+    
+            section.special article, article.special article {
+                text-align: left;
+            }
+    
+        section.wrapper, article.wrapper {
+            padding: 6em 0;
+        }
+    
+            section.wrapper header, article.wrapper header {
+                margin-bottom: 4em;
+            }
+    
+                section.wrapper header h2, article.wrapper header h2 {
+                    font-size: 2.75em;
+                    margin: 0 0 .5em 0;
+                }
+    
+                section.wrapper header p, article.wrapper header p {
+                    font-size: 1em;
+                }
+    
+            section.wrapper article header, article.wrapper article header {
+                margin: 0;
+            }
+    
+            section.wrapper.style1, article.wrapper.style1 {
+                background: #5385c1;
+                color: #bacee6;
+            }
+    
+                section.wrapper.style1 header h2, article.wrapper.style1 header h2 {
+                    color: #fff;
+                }
+    
+                section.wrapper.style1 header p, article.wrapper.style1 header p {
+                    color: #bacee6;
+                }
+    
+                section.wrapper.style1 h3, article.wrapper.style1 h3 {
+                    color: #FFF;
+                }
+    
+            @media screen and (max-width: 980px) {
+    
+                section.wrapper, article.wrapper {
+                    padding: 2em 0;
+                }
+    
+            }
+    
+            @media screen and (max-width: 736px) {
+    
+                section.wrapper header, article.wrapper header {
+                    margin-bottom: 2em;
+                }
+    
+                    section.wrapper header h2, article.wrapper header h2 {
+                        font-size: 2em;
+                    }
+    
+                    section.wrapper header p, article.wrapper header p {
+                        font-size: .9em;
+                    }
+    
+            }
+    
+            @media screen and (max-width: 480px) {
+    
+                section.wrapper, article.wrapper {
+                    text-align: center;
+                }
+    
+                    section.wrapper article, article.wrapper article {
+                        text-align: center;
+                    }
+    
+            }
+        /* Box */
+
+	.box {
+		border: solid 0px #dbdbdb;
+		margin-bottom: 0em;
+		padding: 1.5em;
+	}
+
+		.box > :last-child,
+		.box > :last-child > :last-child,
+		.box > :last-child > :last-child > :last-child {
+			margin-bottom: 0;
+		}
+
+		.box.alt {
+			border: 0;
+			border-radius: 0;
+			padding: 0;
+		}
+/* sqsqsqs */
+		.box.person {
+			border: solid 1px rgba(255, 255, 255, 0.25);
+			padding: 3em 1.5em;
+            padding-right: 10%;
+		}
+
+			.box.person h6 {
+                position:relative;
+                align-content: center;
+                text-align: center;
+                color: #0056b3;
+                font-size: 1.17em;
+                font-weight: bold;
+                line-height: 1.2;
+                 padding: 0px; 
+                 margin-left: px;
+                 display: inline;
+			}
+
+			.box.person .image {
+				margin-bottom: 1em;
+			}
+
+				.box.person .image img {
+					max-width: 100%;
+				}
+    
+
+        		.image.round img {
+                    border-radius: 100%;
+                }
+    
+.inner {
+    max-width: 75em;
+    margin-left: 25%;
+    margin-right: 10%;
+}
+@media screen and (max-width: 1280px) {
+
+    .inner {
+        max-width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .inner {
+        max-width: 85%;
+    }
+
+}
+/*  */
+#header .teaminner {
+    margin: 0 auto;
+    position: relative;
+}
+.teaminner {
+    max-width: 90em;
+    margin-left: 15%;
+    margin-right: 5%;
+}
+@media screen and (max-width: 1280px) {
+
+    .teaminner {
+        max-width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .teaminner {
+        max-width: 85%;
+    }
+
+}
+
+.flex.flex-3 .box {
+    width: 33%;
+}
+@media screen and (max-width: 480px) {
+
+    .flex.flex-3 .box {
+        width: 100%;
+    }
+
+}
