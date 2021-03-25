@@ -2796,7 +2796,7 @@ image-padding
         }
 
         .flex.flex-4 .box {
-			width: 21%;
+			width: 2%;
 		}
 		@media screen and (max-width: 480px) {
 
@@ -2806,7 +2806,7 @@ image-padding
 
 		}
         .flex.flex-4 .box {
-			width: 21%;
+			width: 25%;
 		}
 
     
@@ -2937,7 +2937,7 @@ image-padding
                 font-weight: bold;
                 line-height: 1.2;
                  padding: 0px; 
-                 margin-left: px;
+                 /* margin-left: 20px; */
                  display: inline;
 			}
 
@@ -2955,9 +2955,10 @@ image-padding
                 }
     
 .inner {
-    max-width: 75em;
-    margin-left: 25%;
-    margin-right: 10%;
+    max-width: 90em;
+    margin-left: 0%;
+    /* margin-right: 5%; */
+    /* padding-left: 10%; */
 }
 @media screen and (max-width: 1280px) {
 

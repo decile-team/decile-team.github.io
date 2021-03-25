@@ -4,12 +4,21 @@
 <head>
 
     <meta name="generator" content="Gatsby 2.22.17" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-react-helmet="true">Decile</title>
     <meta data-react-helmet="true" charSet="utf-8" />
     <meta data-react-helmet="true" name="viewport" content="width=device-width, initialScale=1.0" />
     <meta data-react-helmet="true" name="description" content="An ultra customizable generic theme for Stackbit" />
 
     <link rel="stylesheet" href="style.css">
+    <script>
+        var viewMode = getCookie("view-mode");
+if(viewMode == "desktop"){
+    viewport.setAttribute('content', 'width=1024');
+}else if (viewMode == "mobile"){
+    viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
+}
+    </script>
 </head>
 
 <body>
@@ -152,12 +161,12 @@
                     </section>
 
                         <div class="container  align-center ">
-                            <h2 class="section__title">Core Team Members</h2>
+                            <h2 class="section__title" style="margin-left: 7%;">Researchers and Code contributors</h2>
                         </div>
                         <section id="two" class="container align-center" style="padding-bottom: 4%;">
                             <div class="teaminner">
 
-                                <div class="flex flex-3">
+                                <div class="flex flex-3" >
                                     
                                     <div class="box person">
                                         <a href="https://sites.google.com/view/rishabhiyer">
@@ -193,14 +202,49 @@
                                         <p>Praesent placer</p>
                                     </div> -->
                                 </div></div>
-                            </section>
-                                <!-- <div class="container container--md align-center">
-                                    <h2 class="section__title">Team Members</h2>
+                        </section>
+                                <div class="container container--md align-center">
+                                    <h2 class="section__title">Interns</h2>
                                 </div>
-                            <section id="two" class=" special container  align-center" style="padding-bottom: 6%;">
+                            <section id="two" class=" special container  align-center" style="padding-bottom: 6%;padding-left: 4%;">
                                     <div class="inner">
                                 <div class="flex flex-4">
                                     <div class="box person">
+                                        <a href="https://www.linkedin.com/in/dheerajnbhat/">
+
+                                        <div class="image round">
+                                            <img src="images/team/Dheeraj Bhat.jpg" alt="Person 1" />
+                                        </div>
+                                        <h3>Dheeraj Bhat</h3>
+                                        <!-- <p>Cipdum dolor</p> -->
+                                    </div></a>
+                                    <div class="box person">
+                                        <a href="https://www.linkedin.com/in/apurvadani98/">
+
+                                        <div class="image round">
+                                            <img src="images/team/Apurva Dani.jfif" alt="Person 2" />
+                                        </div>
+                                        <h3>Apurva Dani</h3>
+                                        <!-- <p>Vestibulum comm</p> --></a>
+                                    </div>
+                                    <div class="box person">
+                                        <div class="image round">
+                                            <img src="images/team/pic05.jpg" alt="Person 3" />
+                                        </div>
+                                        <h3>Intern 3</h3>
+                                        <!-- <p>Fusce pellentes</p> -->
+                                    </div>
+                                    <div class="box person">
+                                        <div class="image round">
+                                            <img src="images/team/pic06.jpg" alt="Person 4" />
+                                        </div>
+                                        <h3>Intern 4</h3>
+                                        <!-- <p>Praesent placer</p> -->
+                                    </div>
+
+                                </div>
+                                <!-- <div class="flex flex-4">
+                                    <div class="box person">
                                         <div class="image round">
                                             <img src="images/team/pic03.jpg" alt="Person 1" />
                                         </div>
@@ -229,39 +273,9 @@
                                         <p>Praesent placer</p>
                                     </div>
                                 </div>
-                                <div class="flex flex-4">
-                                    <div class="box person">
-                                        <div class="image round">
-                                            <img src="images/team/pic03.jpg" alt="Person 1" />
-                                        </div>
-                                        <h3>Magna</h3>
-                                        <p>Cipdum dolor</p>
-                                    </div>
-                                    <div class="box person">
-                                        <div class="image round">
-                                            <img src="images/team/pic04.jpg" alt="Person 2" />
-                                        </div>
-                                        <h3>Ipsum</h3>
-                                        <p>Vestibulum comm</p>
-                                    </div>
-                                    <div class="box person">
-                                        <div class="image round">
-                                            <img src="images/team/pic05.jpg" alt="Person 3" />
-                                        </div>
-                                        <h3>Tempus</h3>
-                                        <p>Fusce pellentes</p>
-                                    </div>
-                                    <div class="box person">
-                                        <div class="image round">
-                                            <img src="images/team/pic06.jpg" alt="Person 4" />
-                                        </div>
-                                        <h3>Dolore</h3>
-                                        <p>Praesent placer</p>
-                                    </div>
-                                </div>
-                            </div>
+                            </div> -->
                         </div>
-                        </section> -->
+                        </section>
 
 
 
