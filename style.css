@@ -336,9 +336,7 @@ video {
     max-width: 100%
 }
 
-img {
-    height: auto
-}
+
 
 figure {
     margin: 0
@@ -2921,7 +2919,7 @@ image-padding
 			border-radius: 0;
 			padding: 0;
 		}
-/* sqsqsqs */
+
 		.box.person {
 			border: solid 1px rgba(255, 255, 255, 0.25);
 			padding: 3em 1.5em;
@@ -2956,7 +2954,7 @@ image-padding
     
 .inner {
     max-width: 90em;
-    margin-left: 16%;
+    margin-left: -1%;
     margin-right: -20%;
     /* padding-left:20%; */
 }
@@ -2981,9 +2979,9 @@ image-padding
     position: relative;
 }
 .teaminner {
-    max-width: 90em;
-    margin-left: 15%;
-    margin-right: 5%;
+    max-width: 100em;
+    margin-left: -1%;
+    margin-right: -20%;
 }
 @media screen and (max-width: 1280px) {
 
@@ -3001,13 +2999,67 @@ image-padding
 
 }
 
-.flex.flex-3 .box {
-    width: 33%;
+.flex2 {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-right: -.75rem;
+    margin-left: -.75rem */
 }
-@media screen and (max-width: 480px) {
 
-    .flex.flex-3 .box {
+
+.flex2.flex-5 .box {
+    width: 100%;
+}
+/* @media screen and (max-width: 480px) {
+
+    .flex2.flex-5 .box {
         width: 100%;
     }
 
+} */
+.flex2.flex-5 .box {
+    width: 20%;
+
 }
+
+
+
+@media (max-width:800px) {
+    .section__media {
+        margin-bottom: 1.5rem
+    }
+
+    .section--posts .flex2,
+    .section--team .flex2 {
+        justify-content: center
+    }
+}
+
+
+/* div:nth-child(8)
+{
+    position: relative;
+    width: 3%;
+    display: inline-block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 0 25%;
+} */
+/* .flex2.flex-5 .image {
+    display: flex;
+    flex-wrap: wrap;
+
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    vertical-align: bottom;
+
+}
+.flex.flex-4 .image {
+    display: flex;
+    flex-wrap: wrap;
+    
+    height: 170px;
+    width: 170px;
+
+} */
