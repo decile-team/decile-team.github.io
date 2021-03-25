@@ -2956,9 +2956,9 @@ image-padding
     
 .inner {
     max-width: 90em;
-    margin-left: 0%;
-    /* margin-right: 5%; */
-    /* padding-left: 10%; */
+    margin-left: 16%;
+    margin-right: -20%;
+    /* padding-left:20%; */
 }
 @media screen and (max-width: 1280px) {
 
