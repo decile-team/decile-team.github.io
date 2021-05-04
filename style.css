@@ -383,13 +383,13 @@ figure {
     padding-right: 1.125rem
 }
 
-.container--md {
+/* .container--md {
     max-width: 740px
 }
 
 .container--lg {
     max-width: 1140px
-}
+} */
 
 .align-left {
     text-align: left
@@ -2207,12 +2207,15 @@ image-padding
     .container { 
         width: 100%; 
         padding-right: 15px; 
-        padding-left: 15px; 
+        padding-left: 60px; 
         margin-right: auto; 
         margin-left: auto;
+        max-width: 960px;
+        min-width: 960px;
+
     } 
     
-    @media (min-width: 576px){     
+    /* @media (min-width: 576px){     
     .container { 
         max-width: 540px;
     } 
@@ -2234,7 +2237,7 @@ image-padding
     .container { 
         max-width: 1140px;
     } 
-    }     
+    }      */
     
     article, aside, figcaption, figure, footer, header, hgroup, main, nav, section { 
         display: block;
@@ -2547,7 +2550,7 @@ image-padding
             border-top-color: rgb(220, 225, 231); 
             border-right-color: rgb(220, 225, 231); 
             border-bottom-color: rgb(220, 225, 231); 
-            border-left-color: rgb(220, 225, 231); 
+            /* border-left-color: rgb(220, 225, 231);  */
             border-top-left-radius: 5px; 
             border-top-right-radius: 5px; 
             border-bottom-right-radius: 5px; 
