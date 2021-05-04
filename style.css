@@ -2207,12 +2207,10 @@ image-padding
     .container { 
         width: 100%; 
         padding-right: 15px; 
-        padding-left: 60px; 
+        padding-left: 20px; 
         margin-right: auto; 
         margin-left: auto;
         max-width: 960px;
-        min-width: 960px;
-
     } 
     
     /* @media (min-width: 576px){     
@@ -2550,7 +2548,7 @@ image-padding
             border-top-color: rgb(220, 225, 231); 
             border-right-color: rgb(220, 225, 231); 
             border-bottom-color: rgb(220, 225, 231); 
-            /* border-left-color: rgb(220, 225, 231);  */
+            border-left-color: rgb(220, 225, 231); 
             border-top-left-radius: 5px; 
             border-top-right-radius: 5px; 
             border-bottom-right-radius: 5px; 
