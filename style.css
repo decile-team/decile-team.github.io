@@ -3511,3 +3511,184 @@ font-weight: bold;
 {
     font-size: 150%;
 }
+/*-----------------------------------------------------------------------------------*/
+/*	3. CAROUSEL
+/*-----------------------------------------------------------------------------------*/
+
+ #wrapper .d-carousel ul li {
+	background: none;
+	background-color: #FFF;
+	-webkit-box-shadow: 0px 1px 2px 0px #b7b7b7;
+	-moz-box-shadow: 0px 1px 2px 0px #b7b7b7;
+	box-shadow: 0px 1px 2px 0px #b7b7b7; 
+	padding: 15px;
+	width: 175px;
+    overflow:hidden;
+}
+
+.jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.d-carousel h4 {
+	margin: 5px 0 5px 0;
+}
+.d-carousel .jcarousel-container {
+	display: block;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.d-carousel .jcarousel-item {
+	width: 190px;
+	height: 290px;
+}
+
+.d-carousel .jcarousel-container-horizontal {
+	width: 870px;
+	height: 325px;
+	padding: 0 45px;
+}
+
+.d-carousel .jcarousel-item-horizontal {
+	margin-left: 3px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	margin-right: 11px;
+}
+/* next */
+.d-carousel .jcarousel-next-horizontal {
+	position: absolute;
+	top: 149px;
+	right: 0;
+	margin-right: 3px;
+	width: 15px;
+	height: 28px;
+	cursor: pointer;
+	background: transparent url(assets/img/blog-arrows.jpg) no-repeat top right;
+}
+
+.d-carousel .jcarousel-direction-rtl .jcarousel-next-horizontal {
+	left: 5px;
+	right: auto;
+	background-image: url(assets/img/blog-arrows.jpg);
+}
+
+.d-carousel .jcarousel-next-horizontal:hover {
+	background-position: bottom right;
+}
+/* previous */
+.d-carousel .jcarousel-prev-horizontal {
+	position: absolute;
+	top: 149px;
+	left: 0;
+	margin-left: 3px;
+	width: 15px;
+	height: 28px;
+	cursor: pointer;
+	background: transparent url(assets/img/blog-arrows.jpg) no-repeat top left;
+}
+
+.d-carousel .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+	left: auto;
+	right: 5px;
+	background-image: url(assets/img/blog-arrows.jpg);
+}
+
+.d-carousel .jcarousel-prev-horizontal:hover {
+	background-position: bottom left;
+}
+
+/* body {
+	line-height:1
+}  */
+ol, ul {
+	list-style:none
+}
+
+blockquote, q {
+	quotes:none
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content:'';
+	content:none
+}
+:focus {
+	outline:0
+}
+ins {
+	text-decoration:none 
+} 
+del {
+	text-decoration:line-through
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0
+} 
+.clear {
+	clear:both;
+	display:block;
+	overflow:hidden;
+	visibility:hidden;
+	width:0;
+	height:0
+} 
+ .clearfix:after {
+	clear:both;
+	content:' ';
+	display:block;
+	font-size:0;
+	line-height:0;
+	visibility:hidden;
+	width:0;
+	height:0
+} 
+ .clearfix {
+	display:inline-block
+
+}
+
+* html .clearfix {
+	height:1%
+}
+.clearfix {
+	display:block
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	1.	FONT-FACE
+/*-----------------------------------------------------------------------------------*/
+
+ /* @font-face {
+ font-family: 'Puritan20Italic';
+ src: url('style/type/puritan/puritan_italic-webfont.eot?') format('eot'),  url('style/type/puritan/puritan_italic-webfont.woff') format('woff'),  url('style/type/puritan/puritan_italic-webfont.ttf') format('truetype'),  url('style/type/puritan/puritan_italic-webfont.svg#webfontZMWmRIPG') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+ @font-face {
+ font-family: 'Puritan20Normal';
+ src: url('style/type/puritan/puritan_regular-webfont.eot?') format('eot'),  url('style/type/puritan/puritan_regular-webfont.woff') format('woff'),  url('style/type/puritan/puritan_regular-webfont.ttf') format('truetype'),  url('style/type/puritan/puritan_regular-webfont.svg#webfontJ25dHiGv') format('svg');
+ font-weight: normal;
+ font-style: normal;
+} */
+
+/*-----------------------------------------------------------------------------------*/
+/*	2.	GENERAL
+/*-----------------------------------------------------------------------------------*/
+
+/**/ body {
+
+}
+
+#wrapper {
+    font-family:"Lucida Grande", "Lucida Sans Unicode", "Trebuchet MS", Helvetica, Arial, sans-serif;
+	background: transparent url(style/images/bg.png) repeat;
+	color: #787878;
+	font-size: 11px;
+	line-height: 18px;
+	width: 960px;
+	margin: 100px auto 0;
+    
+} 

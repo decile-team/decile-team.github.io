@@ -11,14 +11,19 @@
     <meta data-react-helmet="true" name="description" content="An ultra customizable generic theme for Stackbit" />
     <meta name="viewport" content="width=1200">
     <link rel="stylesheet" href="style.css">
-    <!-- <script>
-        var viewMode = getCookie("view-mode");
-if(viewMode == "desktop"){
-    viewport.setAttribute('content', 'width=1024');
-}else if (viewMode == "mobile"){
-    viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
-}
-    </script> -->
+    <script type="text/javascript" src="assets/js/jquery-1.5.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/jquery.jcarousel.js"></script>
+    
+    <script type="text/javascript">
+    jQuery(document).ready(function() {
+        // Initialise the first and second carousel by class selector.
+        // Note that they use both the same configuration options (none in this case).
+        jQuery('.d-carousel .carousel').jcarousel({
+            scroll: 1
+        });
+    });
+    </script>
 </head>
 
 <body>
@@ -38,12 +43,12 @@ if(viewMode == "desktop"){
 
                             <a class="nav-link" href="#Modules">Modules</a>
 
+                            <a class="nav-link" href="#News">News</a>
 
                             <a class="nav-link" href="#Team">Team</a>
 
 
                             <a class="nav-link" href="#Research">Research</a>
-
 
                         </ul>
                       </nav>
@@ -208,9 +213,54 @@ if(viewMode == "desktop"){
                         <div class="d-flex">
                             <hr class="my-auto flex-grow-1">
                             <!-- <div class="px-4">CORDS</div> -->
-                            <hr class="my-auto flex-grow-1">
                             </div>
                     </section>
+
+                    <div id="News" class="container  align-center  ">
+                        <h2 class="section__title" style="margin-left: 7%;">News</h2>
+
+                    </div>
+                    <section  class="container " style="padding-bottom: 2%;padding-left: 5%; ">
+                        <div id="wrapper">
+  
+                            <div class="d-carousel">
+                              <ul class="carousel">
+
+                                <li> <a href="#"><img src="assets/img/iitb.webp" alt="" /></a>
+                                  <h4><a href="#"> In a first, IIT-Bombay to offer healthcare info course </a></h4>
+                                  <p>MUMBAI: When the Indian Institute of Technology, Bombay (IITB), opens its gates, even if virtually, to the fresh batch of students this August, healthcare informatics will be one of its new offerings. The institute’s foray into healthcare will be a coming together of core sciences—maths, medicine and computer science. It will be offered as an interdisciplinary dual degree programme as well as a minor programme. </p>
+                                </li>
+                                <li> <a href="#"><img src="none" alt="" /></a>
+                                  <h4><a href="#"> </a></h4>
+                                  <p> </p>
+                                </li>
+                                <li> <a href="#"><img src="none" alt="" /></a>
+                                  <h4><a href="#"></a></h4>
+                                  <p> </p>
+                                </li>
+                                <li> <a href="#"><img src="none" alt="" /></a>
+                                  <h4><a href="#"> </a></h4>
+                                  <p> </p>
+                                </li>
+                                <li> <a href="#"><img src="none" alt="" /></a>
+                                  <h4><a href="#"> </a></h4>
+                                  <p> </p>
+                                </li>
+                                <li> <a href="#"><img src="none" alt="" /></a>
+                                  <h4><a href="#"> </a></h4>
+                                  <p> </p>
+                                </li>
+                                <li> <a href="#"><img src="none" alt="" /></a>
+                                  <h4><a href="#"></a></h4>
+                                  <p> </p>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="clear"></div>
+                          </div>
+                    </section>
+
+                    <hr class="my-auto flex-grow-1">
 
                         <div id="Team" class="container  align-center  ">
                             <h2 class="section__title" style="margin-left: 7%;">Team</h2>
