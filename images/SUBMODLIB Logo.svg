@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="618.227" height="128" viewBox="0 0 618.227 128">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="590.227" height="128" viewBox="0 0 590.227 128">
   <defs>
     <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
       <stop offset="0" stop-color="#5277f7"/>
@@ -10,7 +10,7 @@
   </defs>
   <g id="Group_255" data-name="Group 255" transform="translate(-1211.807 -540)">
     <g id="Group_107" data-name="Group 107" transform="translate(994.034 -81)">
-      <text id="Summarize_massive_datasets_submodular" data-name="Summarize massive datasets submodular" transform="translate(356 743)" font-size="25" font-family="SFCompactText-Regular, SF Text"><tspan x="0" y="0">Summarize massive datasets submodular</tspan></text>
+      <text id="Submodular_Optimization_Library" data-name="Submodular Optimization Library" transform="translate(356 743)" font-size="25" font-family="SFCompactText-Regular, SF Text"><tspan x="0" y="0">Submodular Optimization Library</tspan></text>
       <text id="SUBMODLIB" transform="translate(356 699)" fill="#5586f8" font-size="82" font-family="SFCompactText-Medium, SF Text" font-weight="500"><tspan x="0" y="0">SUBMODLIB</tspan></text>
     </g>
     <g id="Group_217" data-name="Group 217" transform="translate(675.56 399.406)">
