@@ -87,7 +87,7 @@
 
 .addon-grid-3{
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: 25.00% 25.00% 25.00% 25.00%;
     padding: 10px;
 }
 
