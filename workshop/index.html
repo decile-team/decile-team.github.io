@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="addon.css">
     <script type="text/javascript" src="../assets/js/jquery-1.5.min.js"></script>
+    <script>
+        function convertDate(dateInput){
+            var date = new Date(dateInput);
+            alert(date.toString());
+        }
+    </script>
 </head>
 <body>
     <div id="___gatsby">
@@ -152,8 +158,9 @@
                                 
                                 <p class="addon-card-header addon-highlighted-text"><strong>Important Dates</strong></p>
                                 <ul class="addon-highlighted-text">
-                                    <li>Workshop Dates: <strong>August 26th to August 28th, 2021</strong></li>
-                                    <li>Registration Closes On : <strong>August 25th</strong></li>
+                                    <li>Workshop Dates: <strong><a href="#date" noreferer onclick="convertDate('8/26/2021 4:30:00 AM UTC')">August 26th</a> to <a noreferer href="#date" onclick="convertDate('8/28/2021 4:30:00 AM UTC')">August 28th</a>, 2021 UTC</strong></li>
+                                    <li>Workshop Time : <strong><a href="#schedule" noreferer onclick="convertDate('8/26/2021 4:30:00 AM UTC')">4:30AM UTC</a>-<a href="#schedule" noreferer onclick="convertDate('8/26/2021 12:30:00 PM UTC')">12:30PM UTC</a></strong></li>
+                                    <li>Registration Closes On : <strong><a href="#registration-deadline" noreferer onclick="convertDate('8/25/2021 06:29:59 PM UTC')">August 25th</a> UTC</strong></li>
                                 </ul>
                                 <p class="addon-card-header"><strong>Fees</strong></p>
                                 <ul>
