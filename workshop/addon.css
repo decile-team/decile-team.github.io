@@ -105,8 +105,8 @@
 }
 
 /* element based styles */
-#workshop-card, #information-card{
-    background-color: rgba(250,250,250,0.8);
+#workshop-card, #information-card, #faq-card{
+    background-color: rgba(200,200,200,0.15);
 }
 
 #addon-register-btn{
