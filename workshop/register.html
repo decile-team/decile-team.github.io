@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="generator" content="Gatsby 2.22.17" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-react-helmet="true">Decile | Workshop</title>
+    <meta data-react-helmet="true" charSet="utf-8" />
+    <meta data-react-helmet="true" name="viewport" content="width=device-width, initialScale=1.0" />
+    <meta data-react-helmet="true" name="description" content="An ultra customizable generic theme for Stackbit" />
+    <meta name="viewport" content="width=1200">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="addon.css">
+    <script type="text/javascript" src="../assets/js/jquery-1.5.min.js"></script>
+
+</head>
+<body>
+    <div id="___gatsby">
+        <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
+            <div id="site-wrap" class="site">
+                
+                <header class="site-header ">
+                    <nav class="navbar navbar-expand-sm bg-light navbar-light ">
+
+                        <img class="navbar-brand " src="../images/DECILE Logo.svg" alt="Logo" style="height:80px;">
+
+                        <ul class="navbar-nav ml-auto">
+ 
+                            <a class="nav-link" href="../">Home</a> 
+
+                            <a class="nav-link" href="/workshop/"><strong class="addon-highlighted-text" style="opacity: 0.5;">Workshop</strong></a>
+
+                        </ul>
+                      </nav>
+                </header>
+                <main id="content" class="site-content">
+                    <section id="workshops" class="section hero bg-image section--padding">
+                        <div class="container container--lg">
+                            <div id="register-card" class="addon-container-card">
+                                <div class="addon-card-header addon-center-aligned-on-phone">Register for the workshop</div>
+                                <br>
+                                <form class="addon-form">
+                                    <input class="addon-input" type="text" placeholder="name">
+                                    <input class="addon-input" type="email" id="email" oninput="emailCheck()" placeholder="email">
+                                    <input class="addon-input" type="number" id="phone" oninput="phoneCheck()" placeholder="phone number">
+                                    <input class="addon-input" type="text" placeholder="address">
+                                    <br>
+                                    <span>
+                                        <span>Signup to our Newsletter</span>
+                                        <input type="checkbox" name="newsletter" id="newsletter">
+                                    </span>
+                                    <br><br>
+                                    <input type="button" value="Register">
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <script defer>
+        var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        var phonePattern = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+        var emailCorrect = false;
+        var phoneCorrect = false;
+        function emailCheck(){ 
+            var email = document.getElementById("email").value; 
+            if(email!==undefined&&email!==""){
+                if(emailPattern.test(event.target.value)){
+                    document.getElementById('email').style = 'color: inherit; border-color: #c0c0c0 !important';
+                    emailCorrect=true;
+                }
+                else{
+                    document.getElementById('email').style = 'color: red;  border-color: #ff5050 !Important';
+                    emailCorrect=false;
+                }
+            }
+            else{
+                    document.getElementById('email').style = 'color: inherit; border-color: #c0c0c0 !important';
+                    emailCorrect=false;
+            }
+        }
+        function phoneCheck(){ 
+            var phone = document.getElementById("phone").value; 
+            if(phone!==undefined&&phone!==""){
+                if(phonePattern.test(event.target.value)){
+                    document.getElementById('phone').style = 'color: inherit; border-color: #c0c0c0 !important';
+                    phoneCorrect=true;
+                }
+                else{
+                    document.getElementById('phone').style = 'color: red;  border-color: #ff5050 !Important';
+                    phoneCorrect=false;
+                }
+            }
+            else{
+                    document.getElementById('phone').style = 'color: inherit; border-color: #c0c0c0 !important';
+                    phoneCorrect=false;
+            }
+        }
+    </script>
+</body>
+</html>

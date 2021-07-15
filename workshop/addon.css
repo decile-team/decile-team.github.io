@@ -104,8 +104,38 @@
     font-size: 13px !important;
 }
 
+.addon-form{
+    padding: 3em 1em;
+}
+
+.addon-input{
+    padding: 5px;
+    color: inherit;
+    margin: 1em auto;
+    border: 1.5px solid #c0c0c0 !important;
+    background-color: #fefefe !important;
+}
+
+.addon-input-error{
+    border: 1.5px solid #ff5050;
+}
+
+.addon-input:focus{
+        border: 1.5px solid black !important;
+        background: rgba(150, 150, 150, 0.1) !important;
+}
+
+.addon-form span{
+    display: flex;
+    align-items: center;
+}
+
+.addon-form span span{
+    margin-right: 10px;
+}
+
 /* element based styles */
-#workshop-card, #information-card, #faq-card{
+#workshop-card, #information-card, #faq-card, #register-card{
     background-color: rgba(200,200,200,0.15);
 }
 
@@ -132,5 +162,13 @@
 
     .addon-grid-3{ 
         grid-template-columns: 100%; 
+    }
+
+    .addon-fom{
+        padding: 1em 0;
+    }
+
+    .addon-center-aligned-on-phone{
+        text-align: center;
     }
 }
