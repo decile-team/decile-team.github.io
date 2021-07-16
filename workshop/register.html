@@ -38,6 +38,7 @@
                             <div id="register-card" class="addon-container-card">
                                 <div class="addon-card-header addon-center-aligned-on-phone">Register for the workshop</div>
                                 <br>
+                                <!-- action="https://getform.io/f/b97d027a-ff15-4187-afc8-a6d0b5251f86" method=POST -->
                                 <form class="addon-form" id="registrationForm">
                                     <input class="addon-input" name="name" type="text" id="name" placeholder="name">
                                     <input class="addon-input" name="email" type="email" id="email" oninput="emailCheck()" placeholder="email">
@@ -273,7 +274,7 @@
                                     <div id="academia">
                                         <p>Your current status at the academy?</p>
                                         <select class="addon-input" name="education" id="education" placeholder="Type of education">
-                                            <option value=null>-</option>
+                                            <option value="unselected">-</option>
                                             <option value="ug">undergraduate</option>
                                             <option value="grad">graduate</option>
                                             <option value="phD">phD</option>
@@ -291,7 +292,7 @@
                                         <input type="checkbox" name="newsletter" value="subscribe" name="newsletter" id="newsletter">
                                     </span>
                                     <br><br>
-                                    <input type="button" value="Register" onclick="submitForm()">
+                                    <input type="submit" value="Register" onclick="submitForm()">
                                 </form>
                             </div>
                         </div>
