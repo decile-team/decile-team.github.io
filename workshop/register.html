@@ -38,15 +38,15 @@
                             <div id="register-card" class="addon-container-card">
                                 <div class="addon-card-header addon-center-aligned-on-phone">Register for the workshop</div>
                                 <br>
-                                <form class="addon-form">
-                                    <input class="addon-input" type="text" id="name" placeholder="name">
-                                    <input class="addon-input" type="email" id="email" oninput="emailCheck()" placeholder="email">
-                                    <input class="addon-input" type="number" id="phone" oninput="phoneCheck()" placeholder="phone number">
-                                    <input class="addon-input" type="text" id="address" placeholder="address">
+                                <form class="addon-form" id="registrationForm">
+                                    <input class="addon-input" name="name" type="text" id="name" placeholder="name">
+                                    <input class="addon-input" name="email" type="email" id="email" oninput="emailCheck()" placeholder="email">
+                                    <input class="addon-input" name="phone" type="number" id="phone" oninput="phoneCheck()" placeholder="phone number">
+                                    <input class="addon-input" name="address" type="text" id="address" placeholder="address">
                                     <br>
                                     <span>
-                                        <span>Signup to our Newsletter</span>
-                                        <input type="checkbox" value=true name="newsletter" id="newsletter">
+                                        <span>Signup to our Newsletter?</span>
+                                        <input type="checkbox" name="newsletter" value="subscribe" name="newsletter" id="newsletter">
                                     </span>
                                     <br><br>
                                     <input type="button" value="Register" onclick="submitForm()">
@@ -104,11 +104,29 @@
             }
         }
         function submitForm(){
-            name = document.getElementById('name').value;
-            newsletter = document.getElementById('newsletter').checked;
-            address = document.getElementById('address').value;
             if(emailCorrect&&phoneCorrect){ 
-                console.log(name, email, phone, address, newsletter);
+                $.ajax({
+                    url:'https://api.apispreadsheets.com/data/15551/',
+                    type:'post',
+                    data:$("#registrationForm").serializeArray(),
+                    success: function(){
+                    alert("Registration Form Submitted :)")
+                    },
+                    error: function(){
+                    alert("There was an error. Please try again later :(")
+                    }
+                });
+            }
+            else{
+                if(!emailCorrect&&phoneCorrect){
+                    alert("Please check your email id in the form");
+                }
+                else if(emailCorrect&&!phoneCorrect){
+                    alert("Please check your phone number in the form");
+                }
+                else{
+                    alert("Please check your phone number and email address provided in the form");
+                }
             }
         }
     </script>
