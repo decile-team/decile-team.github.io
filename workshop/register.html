@@ -39,17 +39,17 @@
                                 <div class="addon-card-header addon-center-aligned-on-phone">Register for the workshop</div>
                                 <br>
                                 <form class="addon-form">
-                                    <input class="addon-input" type="text" placeholder="name">
+                                    <input class="addon-input" type="text" id="name" placeholder="name">
                                     <input class="addon-input" type="email" id="email" oninput="emailCheck()" placeholder="email">
                                     <input class="addon-input" type="number" id="phone" oninput="phoneCheck()" placeholder="phone number">
-                                    <input class="addon-input" type="text" placeholder="address">
+                                    <input class="addon-input" type="text" id="address" placeholder="address">
                                     <br>
                                     <span>
                                         <span>Signup to our Newsletter</span>
-                                        <input type="checkbox" name="newsletter" id="newsletter">
+                                        <input type="checkbox" value=true name="newsletter" id="newsletter">
                                     </span>
                                     <br><br>
-                                    <input type="button" value="Register">
+                                    <input type="button" value="Register" onclick="submitForm()">
                                 </form>
                             </div>
                         </div>
@@ -64,8 +64,13 @@
         var phonePattern = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
         var emailCorrect = false;
         var phoneCorrect = false;
+        var email = undefined;
+        var phone = undefined;
+        var name = undefined;
+        var address = undefined;
+        var newsletter = false;
         function emailCheck(){ 
-            var email = document.getElementById("email").value; 
+            email = document.getElementById("email").value; 
             if(email!==undefined&&email!==""){
                 if(emailPattern.test(event.target.value)){
                     document.getElementById('email').style = 'color: inherit; border-color: #c0c0c0 !important';
@@ -82,7 +87,7 @@
             }
         }
         function phoneCheck(){ 
-            var phone = document.getElementById("phone").value; 
+            phone = document.getElementById("phone").value; 
             if(phone!==undefined&&phone!==""){
                 if(phonePattern.test(event.target.value)){
                     document.getElementById('phone').style = 'color: inherit; border-color: #c0c0c0 !important';
@@ -96,6 +101,14 @@
             else{
                     document.getElementById('phone').style = 'color: inherit; border-color: #c0c0c0 !important';
                     phoneCorrect=false;
+            }
+        }
+        function submitForm(){
+            name = document.getElementById('name').value;
+            newsletter = document.getElementById('newsletter').checked;
+            address = document.getElementById('address').value;
+            if(emailCorrect&&phoneCorrect){ 
+                console.log(name, email, phone, address, newsletter);
             }
         }
     </script>
