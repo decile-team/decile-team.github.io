@@ -138,10 +138,20 @@
     margin-right: 10px;
 }
 
+.addon-grid-2{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
 /* element based styles */
 #workshop-card, #information-card, #faq-card, #register-card{
     background-color: rgba(150,150,150,0.15);
     border-radius: 10px;
+}
+
+#register-card{
+    width: 80%;
+    margin: auto;
 }
 
 #addon-register-btn{
@@ -152,6 +162,12 @@
 #addon-register-btn:hover{
     border-color: #501fef;
     color: #501fef;
+}
+
+#newsletter{
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
 }
 
 
@@ -175,5 +191,13 @@
 
     .addon-center-aligned-on-phone{
         text-align: center;
+    }
+
+    .addon-grid-2{
+        grid-template-columns: 40% 60%;
+    }
+
+    #register-card{
+        width: 100%;
     }
 }
