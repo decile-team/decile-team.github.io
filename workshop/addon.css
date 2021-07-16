@@ -116,6 +116,10 @@
     background-color: #fefefe !important;
 }
 
+.addon-hidden-wrapper{
+    display: none;
+}
+
 .addon-input-error{
     border: 1.5px solid #ff5050;
 }
