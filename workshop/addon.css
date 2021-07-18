@@ -143,6 +143,14 @@
     grid-template-columns: 25% 75%;
 }
 
+.addon-smaller-text{
+    font-size:  80%;
+    opacity: 70%;
+    color: #105fef;
+    font-style: italic;
+
+}
+
 /* element based styles */
 #workshop-card, #information-card, #faq-card, #register-card{
     background-color: rgba(150,150,150,0.15);
