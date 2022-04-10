@@ -7,6 +7,13 @@ body {
     margin: 0
 }
 
+#blink {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2d38be;
+    transition: 0.5s;
+}
+
 main {
     display: block
 }
