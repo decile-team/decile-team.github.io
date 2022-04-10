@@ -14,15 +14,21 @@
     <script type="text/javascript" src="assets/js/jquery-1.5.min.js"></script>
 
     <script type="text/javascript" src="assets/js/jquery.jcarousel.js"></script>
-    
+
     <script type="text/javascript">
-    jQuery(document).ready(function() {
-        // Initialise the first and second carousel by class selector.
-        // Note that they use both the same configuration options (none in this case).
-        jQuery('.d-carousel .carousel').jcarousel({
-            scroll: 1
+        jQuery(document).ready(function () {
+            // Initialise the first and second carousel by class selector.
+            // Note that they use both the same configuration options (none in this case).
+            jQuery('.d-carousel .carousel').jcarousel({
+                scroll: 1
+            });
+            var blink = document.getElementById('blink');
+            setInterval(function () {
+                blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+            }, 1500);
         });
-    });
+
+
     </script>
 </head>
 
@@ -30,14 +36,14 @@
     <div id="___gatsby">
         <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
             <div id="site-wrap" class="site">
-                
+
                 <header class="site-header ">
                     <nav class="navbar navbar-expand-sm bg-light navbar-light ">
 
                         <img class="navbar-brand " src="images/DECILE Logo.svg" alt="Logo" style="height:80px;">
 
                         <ul class="navbar-nav ml-auto">
- 
+
                             <!-- <a class="nav-link" href="/">Home</a>  -->
 
                             <a class="nav-link" href="#Team">Team</a>
@@ -45,10 +51,10 @@
 
                             <a class="nav-link" href="#Research">Research</a>
 
-                            <a class="nav-link" href="/workshop/">Workshop</a>
+                            <a class="nav-link" href="/workshop/">Workshop<sup id="blink">new</sup></a>
 
                         </ul>
-                      </nav>
+                    </nav>
 
                 </header>
                 <main id="content" class="site-content">
@@ -78,13 +84,21 @@
                         </div> -->
                         <div class="container container--lg">
                             <div class="flex flex--middle flex--center flex--col-2">
-                                <div class="cell section__media section__media--right image-padding "><img src="images/DECILE Logo.svg"
-                                        alt="Hero placeholder image" /></div>
+                                <div class="cell section__media section__media--right image-padding "><img
+                                        src="images/DECILE Logo.svg" alt="Hero placeholder image" /></div>
                                 <div class="cell section__body">
                                     <h1 class="section__title">What is DECILE</h1>
                                     <div class="section__copy">
                                         <p><b style="font-size: 18px;">Data Efficient Learning with Less Data</b><br>
-                                            State of the art AI and Deep Learning are very data hungry. This comes at significant cost including larger resource costs (multiple expensive GPUs and cloud costs), training times (often times multiple days), and human labeling costs and time. Decile attempts to solve this by answering the following question. Can we train state of the art deep models with only a sample (say 5 to 10\%) of massive datasets, while having neglibible impact in accuracy? Can we do this while reducing training time/cost by an order of magnitude, and/or significantly reducing the amount of labeled data required?</p>
+                                            State of the art AI and Deep Learning are very data hungry. This comes at
+                                            significant cost including larger resource costs (multiple expensive GPUs
+                                            and cloud costs), training times (often times multiple days), and human
+                                            labeling costs and time. Decile attempts to solve this by answering the
+                                            following question. Can we train state of the art deep models with only a
+                                            sample (say 5 to 10\%) of massive datasets, while having neglibible impact
+                                            in accuracy? Can we do this while reducing training time/cost by an order of
+                                            magnitude, and/or significantly reducing the amount of labeled data
+                                            required?</p>
                                     </div>
                                     <!--<div class="section__actions btn-group"><a href="https://www.google.com/"
                                             class="btn">Learn More</a></div>-->
@@ -97,40 +111,42 @@
                             <div class="container container--md align-center">
 
                             </div>
-                    <!-- <section  class="container " style="padding-bottom: 2%; "> -->
-                    <div class="container container--l">
-                        <div><h2 class="container container--md align-center section__title">Need for DECILE</h2></div>
-                        <div class="flex flex--middle flex--center flex--col-2 ">
-                                    
-                                    
-                                <div class="e2-35 x-col gc_ai_app gc_ai_build one">
-                                    <div class="e2-36 x-text align-center-icon"><br><br>
-                                        Staggering Training Costs of Deep Learning
-                                    </div>
+                            <!-- <section  class="container " style="padding-bottom: 2%; "> -->
+                            <div class="container container--l">
+                                <div>
+                                    <h2 class="container container--md align-center section__title">Need for DECILE</h2>
                                 </div>
-                                <div class="e2-37 x-col gc_ai_app gc_ai_dev two">
-                                    <div class="e2-38 x-text align-center-icon"><br><br>
-                                        Labeling Large Datasets is Expensive
+                                <div class="flex flex--middle flex--center flex--col-2 ">
+
+
+                                    <div class="e2-35 x-col gc_ai_app gc_ai_build one">
+                                        <div class="e2-36 x-text align-center-icon"><br><br>
+                                            Staggering Training Costs of Deep Learning
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="e2-39 x-col gc_ai_app gc_ai_data three">
-                                    <div class="e2-40 x-text align-center-icon"><br><br>
-                                        Noise and Imbalance in Data
+                                    <div class="e2-37 x-col gc_ai_app gc_ai_dev two">
+                                        <div class="e2-38 x-text align-center-icon"><br><br>
+                                            Labeling Large Datasets is Expensive
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="e2-41 x-col gc_ai_app gc_ai_fuel four">
-                                    <div class="e2-42 x-text align-center-icon"><br><br>
-                                        Human Consumption and Data Overload
+                                    <div class="e2-39 x-col gc_ai_app gc_ai_data three">
+                                        <div class="e2-40 x-text align-center-icon"><br><br>
+                                            Noise and Imbalance in Data
+                                        </div>
                                     </div>
+                                    <div class="e2-41 x-col gc_ai_app gc_ai_fuel four">
+                                        <div class="e2-42 x-text align-center-icon"><br><br>
+                                            Human Consumption and Data Overload
+                                        </div>
+                                    </div>
+
+                                    <!-- </section> -->
+
                                 </div>
 
-                        <!-- </section> -->
-                                    
-                                </div>
-                            
-                        </div>
+                            </div>
                     </section>
-                    
+
                     <section id="Modules" class="section ">
                         <div class="container container--md align-center">
                             <h2 class="section__title">Modules</h2>
@@ -139,89 +155,118 @@
                             <hr class="my-auto flex-grow-1">
                             <!-- <div class="px-4">CORDS</div> -->
                             <hr class="my-auto flex-grow-1">
-                            </div>
+                        </div>
                         <div class="container container--lg">
                             <div class="flex flex--middle flex--center flex--col-2">
                                 <div class="cell section__media section__media--right"><img src="images/Cords_Icon.png"
                                         alt="Feature 1 placeholder image" /></div>
                                 <div class="section__body cell">
                                     <!-- <h3 class="section__title">CORDS</h3> -->
-                                    <img class="navbar-brand " src="images/CORDS Logo.svg" alt="Logo" style="height:80px;">
+                                    <img class="navbar-brand " src="images/CORDS Logo.svg" alt="Logo"
+                                        style="height:80px;">
                                     <div class="section__copy">
-                                        <p>Reduce end to end training time from days to hours and hours to minutes using <b>co</b>resets and <b>d</b>ata <b>s</b>election. CORDS implements a number of state of the art data subset selection algorithms and coreset algorithms. Some of the algorithms currently implemented with CORDS include: GLISTER, GradMatchOMP, GradMatchFixed, CRAIG, SubmodularSelection, RandomSelection etc</p>
+                                        <p>Reduce end to end training time from days to hours and hours to minutes using
+                                            <b>co</b>resets and <b>d</b>ata <b>s</b>election. CORDS implements a number
+                                            of state of the art data subset selection algorithms and coreset algorithms.
+                                            Some of the algorithms currently implemented with CORDS include: GLISTER,
+                                            GradMatchOMP, GradMatchFixed, CRAIG, SubmodularSelection, RandomSelection
+                                            etc
+                                        </p>
                                     </div>
-                                    <div class="section__actions btn-group" style="padding: 20px;"><a class="btn btn--secondary" href="https://github.com/decile-team/cords" >Learn More</a></div>
+                                    <div class="section__actions btn-group" style="padding: 20px;"><a
+                                            class="btn btn--secondary" href="https://github.com/decile-team/cords">Learn
+                                            More</a></div>
                                 </div>
                             </div>
                             <div class="d-flex">
                                 <hr class="my-auto flex-grow-1">
                                 <!-- <div class="px-4">CORDS</div> -->
                                 <hr class="my-auto flex-grow-1">
-                                </div>
+                            </div>
 
                             <div class="flex flex--middle flex--center flex--col-2">
                                 <div class="cell section__media section__media--right"><img src="images/Distil_Icon.png"
                                         alt="Feature 2 placeholder image" /></div>
                                 <div class="section__body cell">
                                     <!-- <h3 class="section__title">DISTIL</h3> -->
-                                    <img class="navbar-brand " src="images/DISTIL Logo.svg" alt="Logo" style="height:80px;">
+                                    <img class="navbar-brand " src="images/DISTIL Logo.svg" alt="Logo"
+                                        style="height:80px;">
                                     <div class="section__copy">
-                                        <p>DISTIL is a library that features many state-of-the-art active learning algorithms. Implemented in PyTorch, it gives fast and efficient implementations of these active learning algorithms. It allows users to modularly insert active learning selection into their pre-existing training loops with minimal change. Most importantly, it features promising results in achieving high model performance with less amount of labeled data. If you are looking to cut down on labeling costs, DISTIL should be your go-to for getting the most out of your data.</p>
+                                        <p>DISTIL is a library that features many state-of-the-art active learning
+                                            algorithms. Implemented in PyTorch, it gives fast and efficient
+                                            implementations of these active learning algorithms. It allows users to
+                                            modularly insert active learning selection into their pre-existing training
+                                            loops with minimal change. Most importantly, it features promising results
+                                            in achieving high model performance with less amount of labeled data. If you
+                                            are looking to cut down on labeling costs, DISTIL should be your go-to for
+                                            getting the most out of your data.</p>
                                     </div>
-                                    <div class="section__actions btn-group" style="padding: 20px;"><a class="btn btn--secondary" href="https://github.com/decile-team/distil">Learn More</a></div>
+                                    <div class="section__actions btn-group" style="padding: 20px;"><a
+                                            class="btn btn--secondary"
+                                            href="https://github.com/decile-team/distil">Learn More</a></div>
                                 </div>
                             </div>
                             <div class="d-flex">
                                 <hr class="my-auto flex-grow-1">
                                 <!-- <div class="px-4">CORDS</div> -->
                                 <hr class="my-auto flex-grow-1">
-                                </div>
+                            </div>
                             <div class="flex flex--middle flex--center flex--col-2">
                                 <div class="cell section__media section__media--right"><img src="images/submodlib.png"
                                         alt="Feature 3 placeholder image" /></div>
                                 <div class="section__body cell">
                                     <!-- <h3 class="section__title">SUBMODLIB</h3> -->
-                                    <img class="navbar-brand " src="images/Submodlib Logo.png" alt="Logo" style="height:80px;">
+                                    <img class="navbar-brand " src="images/Submodlib Logo.png" alt="Logo"
+                                        style="height:80px;">
                                     <div class="section__copy">
                                         <p>Summarize massive datasets using submodular optimization</p>
                                     </div>
-                                    <div class="section__actions btn-group" style="padding: 20px;"><a class="btn btn--secondary" href="https://github.com/decile-team/submodlib">Learn More</a></div>
+                                    <div class="section__actions btn-group" style="padding: 20px;"><a
+                                            class="btn btn--secondary"
+                                            href="https://github.com/decile-team/submodlib">Learn More</a></div>
                                 </div>
                             </div>
                             <div class="d-flex">
                                 <hr class="my-auto flex-grow-1">
                                 <!-- <div class="px-4">CORDS</div> -->
                                 <hr class="my-auto flex-grow-1">
-                                </div>
+                            </div>
 
                             <div class="flex flex--middle flex--center flex--col-2">
-                                <div class="cell section__media section__media--right"><a href="https://github.com/decile-team/spear">
-                                <img src="images/SPEAR Logo.svg" alt="SPEAR" /></a></div>
+                                <div class="cell section__media section__media--right"><a
+                                        href="https://github.com/decile-team/spear">
+                                        <img src="images/SPEAR Logo.svg" alt="SPEAR" /></a></div>
                                 <div class="section__body cell">
                                     <!-- <h3 class="section__title">SPEAR</h3> -->
-                                    <img class="navbar-brand " src="images/SPEAR Logo.svg" alt="Logo" style="height:80px;">
+                                    <img class="navbar-brand " src="images/SPEAR Logo.svg" alt="Logo"
+                                        style="height:80px;">
                                     <div class="section__copy">
                                         <p>Reduce Data labeling efforts using data programming</p>
                                     </div>
-                                    <div class="section__actions btn-group" style="padding: 20px;"><a class="btn btn--secondary" href="https://github.com/decile-team/spear">Learn More</a></div>
+                                    <div class="section__actions btn-group" style="padding: 20px;"><a
+                                            class="btn btn--secondary" href="https://github.com/decile-team/spear">Learn
+                                            More</a></div>
                                 </div>
                             </div>
                             <div class="d-flex">
                                 <hr class="my-auto flex-grow-1">
                                 <!-- <div class="px-4">CORDS</div> -->
                                 <hr class="my-auto flex-grow-1">
-                                </div>
+                            </div>
 
                             <div class="flex flex--middle flex--center flex--col-2">
-                                <div class="cell section__media section__media--right" ><img src="images/Interface.png"
-                                        alt="lorem-ipsum" width="100%"/></div>
+                                <div class="cell section__media section__media--right"><img src="images/Interface.png"
+                                        alt="lorem-ipsum" width="100%" /></div>
                                 <div class="section__body cell">
                                     <!-- <h3 class="section__title">SPEAR</h3> -->
-                                    <img class="navbar-brand " src="images/Trust Logo.svg" alt="Logo" style="height:80px;">
+                                    <img class="navbar-brand " src="images/Trust Logo.svg" alt="Logo"
+                                        style="height:80px;">
                                     <div class="section__copy">
                                         <p>Targeted subset selection</p>
                                     </div>
-                                    <div class="section__actions btn-group" style="padding: 20px;"><a class="btn btn--secondary" href="https://github.com/decile-team">Learn More</a></div>
+                                    <div class="section__actions btn-group" style="padding: 20px;"><a
+                                            class="btn btn--secondary" href="https://github.com/decile-team">Learn
+                                            More</a></div>
                                 </div>
                             </div>
                         </div>
@@ -230,362 +275,423 @@
                         <div class="d-flex">
                             <hr class="my-auto flex-grow-1">
                             <!-- <div class="px-4">CORDS</div> -->
-                            </div>
+                        </div>
                     </section>
 
                     <div id="News" class="container  align-center  ">
                         <h2 class="section__title" style="margin-left: 7%;">News</h2>
 
                     </div>
-                    <section  class="container " style="padding-bottom: 2%;padding-left: 5%; ">
+                    <section class="container " style="padding-bottom: 2%;padding-left: 5%; ">
                         <div id="wrapper">
-  
-                            <div class="d-carousel">
-                              <ul class="carousel">
 
-                                <li> <a href="https://timesofindia.indiatimes.com/city/mumbai/in-a-first-iit-bombay-to-offer-healthcare-info-course/articleshow/82510791.cms?utm_source=twitter.com&utm_medium=social&utm_campaign=TOIDesktop"><img src="assets/img/iitb.webp" alt="" /></a>
-                                  <h4><a href="https://timesofindia.indiatimes.com/city/mumbai/in-a-first-iit-bombay-to-offer-healthcare-info-course/articleshow/82510791.cms?utm_source=twitter.com&utm_medium=social&utm_campaign=TOIDesktop"> Decile integrated into modern healthcare curriculum</a></h4>
-                                  <p>MUMBAI: When the Indian Institute of Technology, Bombay (IITB), opens its gates, even if virtually, to the fresh batch of students this August, healthcare informatics will be one of its new offerings. The institute’s foray into healthcare will be a coming together of core sciences—maths, medicine and computer science. It will be offered as an interdisciplinary dual degree programme as well as a minor programme. </p>
-                                </li>
-                                <li> <a href="https://www.mid-day.com/mumbai/mumbai-news/article/cctv-tech-by-iit-bombay-checks-footage-sends-out-alerts-23178746"><img src="assets/img/CCTV-tech_d.jpg" alt="" /></a>
-                                    <h4><a href="https://www.mid-day.com/mumbai/mumbai-news/article/cctv-tech-by-iit-bombay-checks-footage-sends-out-alerts-23178746">IIT-Bombay utilizes Decile technology to monitor suspicious movements</a></h4>
-                                    <p>MUMBAI: Surakshavyuh makes surveillance smart and does in real-time what is usually a human’s job — monitoring CCTV camera footage for hours and alerting on suspicious movements</p>
-                                </li>
-                                <li> <a href="https://timesofindia.indiatimes.com/city/mumbai/mumbai-iit-b-develops-ai-based-solutions-for-video-analytics-surveillance/articleshow/83590627.cms"><img src="assets/img/IITB2.webp" alt="" /></a>
-                                    <h4><a href="https://timesofindia.indiatimes.com/city/mumbai/mumbai-iit-b-develops-ai-based-solutions-for-video-analytics-surveillance/articleshow/83590627.cms">Decile used to develop Artificial Intelligence in CCTV software</a></h4>
-                                    <p>MUMBAI: Spotting every biker who travelled without a helmet in Mumbai in the last week may require the police control rooms to go through terabytes of video footage. But now, that data can be extracted in a short span of time not by deploying Israeli tech, but by using local solutions developed by IIT-Bombay.</p>
-                                </li>
-                                <li> <a href="https://www.hindustantimes.com/cities/mumbai-news/iitbombay-develops-ai-platform-for-real-time-video-surveillance-101623870072155.html"><img src="assets/img/cctv_stock.jpg" alt="" /></a>
-                                    <h4><a href="https://www.hindustantimes.com/cities/mumbai-news/iitbombay-develops-ai-platform-for-real-time-video-surveillance-101623870072155.html">Military surveillance utilizes Decile for remote monitoring</a></h4>
-                                    <p>MUMBAI: A state-of-the-art video surveillance platform developed by researchers at the Indian Institute of Technology-Bombay (IIT-B) has found application in military surveillance as well as remote monitoring of social distancing norms violations amid Covid-19 pandemic.</p>
-                                </li>
-                                <li> <a href="#"><img src="none" alt="" /></a>
-                                  <h4><a href="#"> </a></h4>
-                                  <p> </p>
-                                </li>
-                                <li> <a href="#"><img src="none" alt="" /></a>
-                                  <h4><a href="#"> </a></h4>
-                                  <p> </p>
-                                </li>
-                                <li> <a href="#"><img src="none" alt="" /></a>
-                                  <h4><a href="#"></a></h4>
-                                  <p> </p>
-                                </li>
-                              </ul>
+                            <div class="d-carousel">
+                                <ul class="carousel">
+
+                                    <li> <a
+                                            href="https://timesofindia.indiatimes.com/city/mumbai/in-a-first-iit-bombay-to-offer-healthcare-info-course/articleshow/82510791.cms?utm_source=twitter.com&utm_medium=social&utm_campaign=TOIDesktop"><img
+                                                src="assets/img/iitb.webp" alt="" /></a>
+                                        <h4><a
+                                                href="https://timesofindia.indiatimes.com/city/mumbai/in-a-first-iit-bombay-to-offer-healthcare-info-course/articleshow/82510791.cms?utm_source=twitter.com&utm_medium=social&utm_campaign=TOIDesktop">
+                                                Decile integrated into modern healthcare curriculum</a></h4>
+                                        <p>MUMBAI: When the Indian Institute of Technology, Bombay (IITB), opens its
+                                            gates, even if virtually, to the fresh batch of students this August,
+                                            healthcare informatics will be one of its new offerings. The institute’s
+                                            foray into healthcare will be a coming together of core sciences—maths,
+                                            medicine and computer science. It will be offered as an interdisciplinary
+                                            dual degree programme as well as a minor programme. </p>
+                                    </li>
+                                    <li> <a
+                                            href="https://www.mid-day.com/mumbai/mumbai-news/article/cctv-tech-by-iit-bombay-checks-footage-sends-out-alerts-23178746"><img
+                                                src="assets/img/CCTV-tech_d.jpg" alt="" /></a>
+                                        <h4><a
+                                                href="https://www.mid-day.com/mumbai/mumbai-news/article/cctv-tech-by-iit-bombay-checks-footage-sends-out-alerts-23178746">IIT-Bombay
+                                                utilizes Decile technology to monitor suspicious movements</a></h4>
+                                        <p>MUMBAI: Surakshavyuh makes surveillance smart and does in real-time what is
+                                            usually a human’s job — monitoring CCTV camera footage for hours and
+                                            alerting on suspicious movements</p>
+                                    </li>
+                                    <li> <a
+                                            href="https://timesofindia.indiatimes.com/city/mumbai/mumbai-iit-b-develops-ai-based-solutions-for-video-analytics-surveillance/articleshow/83590627.cms"><img
+                                                src="assets/img/IITB2.webp" alt="" /></a>
+                                        <h4><a
+                                                href="https://timesofindia.indiatimes.com/city/mumbai/mumbai-iit-b-develops-ai-based-solutions-for-video-analytics-surveillance/articleshow/83590627.cms">Decile
+                                                used to develop Artificial Intelligence in CCTV software</a></h4>
+                                        <p>MUMBAI: Spotting every biker who travelled without a helmet in Mumbai in the
+                                            last week may require the police control rooms to go through terabytes of
+                                            video footage. But now, that data can be extracted in a short span of time
+                                            not by deploying Israeli tech, but by using local solutions developed by
+                                            IIT-Bombay.</p>
+                                    </li>
+                                    <li> <a
+                                            href="https://www.hindustantimes.com/cities/mumbai-news/iitbombay-develops-ai-platform-for-real-time-video-surveillance-101623870072155.html"><img
+                                                src="assets/img/cctv_stock.jpg" alt="" /></a>
+                                        <h4><a
+                                                href="https://www.hindustantimes.com/cities/mumbai-news/iitbombay-develops-ai-platform-for-real-time-video-surveillance-101623870072155.html">Military
+                                                surveillance utilizes Decile for remote monitoring</a></h4>
+                                        <p>MUMBAI: A state-of-the-art video surveillance platform developed by
+                                            researchers at the Indian Institute of Technology-Bombay (IIT-B) has found
+                                            application in military surveillance as well as remote monitoring of social
+                                            distancing norms violations amid Covid-19 pandemic.</p>
+                                    </li>
+                                    <li> <a href="#"><img src="none" alt="" /></a>
+                                        <h4><a href="#"> </a></h4>
+                                        <p> </p>
+                                    </li>
+                                    <li> <a href="#"><img src="none" alt="" /></a>
+                                        <h4><a href="#"> </a></h4>
+                                        <p> </p>
+                                    </li>
+                                    <li> <a href="#"><img src="none" alt="" /></a>
+                                        <h4><a href="#"></a></h4>
+                                        <p> </p>
+                                    </li>
+                                </ul>
                             </div>
                             <div class="clear"></div>
-                          </div>
+                        </div>
                     </section>
 
                     <hr class="my-auto flex-grow-1">
 
-                        <div id="Team" class="container  align-center  ">
-                            <h2 class="section__title" style="margin-left: 7%; padding-top: 2%;">Team</h2>
+                    <div id="Team" class="container  align-center  ">
+                        <h2 class="section__title" style="margin-left: 7%; padding-top: 2%;">Team</h2>
 
-                        </div>
-                        <section  class="container " style="padding-bottom: 2%; ">
-                            <div class="inner">
-                                <div class="flex flex-4 " style="padding-bottom: 4%; ">
-                                    <div class="box person ">
-                                        <a href="https://sites.google.com/view/rishabhiyer">
+                    </div>
+                    <section class="container " style="padding-bottom: 2%; ">
+                        <div class="inner">
+                            <div class="flex flex-4 " style="padding-bottom: 4%; ">
+                                <div class="box person ">
+                                    <a href="https://sites.google.com/view/rishabhiyer">
                                         <div class="image round">
                                             <img src="images/team/Rishabh Iyer.png" alt="Person 2" />
                                         </div>
-                                        <h4  style="padding-bottom:15% ;" >Rishabh Iyer</h4>
+                                        <h4 style="padding-bottom:15% ;">Rishabh Iyer</h4>
                                         <p>Assistant Professor, University of Texas Dallass</p>
                                     </a>
-                                    </div>
-                                    <div class="box person">
-                                        <a href="https://www.cse.iitb.ac.in/~ganesh/">
+                                </div>
+                                <div class="box person">
+                                    <a href="https://www.cse.iitb.ac.in/~ganesh/">
                                         <div class="image round">
                                             <img src="images/team/Ganesh Ramakrishnan.jpeg" alt="Person 3" />
                                         </div>
                                         <h4 style="padding-bottom:4% ;">Ganesh Ramakrishnan</h4>
-                                        <p>Institute Chair Professor, Dept of CSE, IIT Bombay</p></a>
-                                    </div>
-                                    <div class="box person">
-                                        <a href="https://www.linkedin.com/in/pankaj-singh-b000894a/">
+                                        <p>Institute Chair Professor, Dept of CSE, IIT Bombay</p>
+                                    </a>
+                                </div>
+                                <div class="box person">
+                                    <a href="https://www.linkedin.com/in/pankaj-singh-b000894a/">
                                         <div class="image round">
                                             <img src="images/team/pankaj.singh.jpg" alt="Person 3" />
                                         </div>
                                         <h4 style="padding-bottom:15% ;">Pankaj Singh</h4>
                                         <p>Director, </p>
-                                        <p>Aify Innovation Labs</p></a>
-                                    </div>
+                                        <p>Aify Innovation Labs</p>
+                                    </a>
+                                </div>
 
+
+                            </div>
+                    </section>
+                    <div class="d-flex">
+                        <hr class="my-auto flex-grow-1">
+                        <!-- <div class="px-4">CORDS</div> -->
+                        <hr class="my-auto flex-grow-1">
+                    </div>
+                    <section class="container " style="padding-bottom: 1%; padding-top: 2%;">
+                        <div class="inner">
+
+                            <div class="flex2 flex-5 ">
+                                <div class="container  align-center  ">
+                                    <h3 class="section__title">Researchers and Code contributors</h3>
 
                                 </div>
-                        </section>
-                        <div class="d-flex">
-                            <hr class="my-auto flex-grow-1">
-                            <!-- <div class="px-4">CORDS</div> -->
-                            <hr class="my-auto flex-grow-1">
-                            </div>
-                        <section  class="container " style="padding-bottom: 1%; padding-top: 2%;">
-                            <div class="inner">
 
-                                <div class="flex2 flex-5 "  >
-                                    <div class="container  align-center  ">
-                                        <h3 class="section__title" >Researchers and Code contributors</h3>
-            
-                                    </div>
-
-                                    <div class="box person" >
-                                        <a href="https://www.cse.iitb.ac.in/~gsaiabhishek/">
-                                        <div class="image round" >
+                                <div class="box person">
+                                    <a href="https://www.cse.iitb.ac.in/~gsaiabhishek/">
+                                        <div class="image round">
                                             <img src="images/team/Guttu Sai Abhishek.jfif" alt="Person 1" />
                                         </div>
-                                        <h4   style="padding-bottom:7% ;">G Sai Abhishek</h4>
-                                        <p>B.Tech, <p>IIT Bombay</p></p></a>
-                                    </div>
-                                    <div class="box person">
-                                        <a href="">
+                                        <h4 style="padding-bottom:7% ;">G Sai Abhishek</h4>
+                                        <p>B.Tech, <p>IIT Bombay</p>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="box person">
+                                    <a href="">
                                         <div class="image round">
                                             <img src="images/team/any.png" alt="Person 3" />
                                         </div>
                                         <h4 style="padding-bottom:0% ;">Nathan Beck</h4>
-                                        <p>PhD Student, <p>UT Dallas</p></p>
+                                        <p>PhD Student, <p>UT Dallas</p>
+                                        </p>
                                     </a>
-                                    </div>
-                                    <div class="box person">
-                                        <a href="https://www.cse.iitb.ac.in/~vineethdorna/">
+                                </div>
+                                <div class="box person">
+                                    <a href="https://www.cse.iitb.ac.in/~vineethdorna/">
                                         <div class="image round">
                                             <img src="images/team/Vineeth Dorna.jpg" alt="Person 3" />
                                         </div>
                                         <h4 style="padding-bottom:7% ;">Vineeth Dorna</h4>
-                                        <p>B.Tech, <p>IIT Bombay</p></p></a>
-                                    </div>
-                                    <div class="box person">
-                                        <a href="https://www.cse.iitb.ac.in/~harshadingole/">
+                                        <p>B.Tech, <p>IIT Bombay</p>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="box person">
+                                    <a href="https://www.cse.iitb.ac.in/~harshadingole/">
                                         <div class="image round">
                                             <img src="images/team/any.png" alt="Person 3" />
                                         </div>
-                                        <h4  style="padding-bottom:7% ;">Harshad Ingole</h4>
-                                        <p>B.Tech, <p>IIT Bombay</p></p></a>
-                                    </div>
-                                    <div class="box person">
-                                        <a href="https://www.cse.iitb.ac.in/~vkaushal/">
+                                        <h4 style="padding-bottom:7% ;">Harshad Ingole</h4>
+                                        <p>B.Tech, <p>IIT Bombay</p>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="box person">
+                                    <a href="https://www.cse.iitb.ac.in/~vkaushal/">
                                         <div class="image round">
                                             <img src="images/team/Vishal Kaushal.jpg" alt="Person 3" />
                                         </div>
                                         <h4 style="padding-bottom:7% ;">Vishal Kaushal</h4>
-                                        <p>PhD Student, <p>IIT Bombay</p></p></a>
-                                        
-                                    </div>
-
-
+                                        <p>PhD Student, <p>IIT Bombay</p>
+                                        </p>
+                                    </a>
 
                                 </div>
+
+
+
                             </div>
-                                    <div class=" flex flex-4 align-center" style="text-align:center; ">
+                        </div>
+                        <div class=" flex flex-4 align-center" style="text-align:center; ">
 
-
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class="d-flex">
-
-                                <section id="two" class="  container  align-center" style="padding-bottom: 6%;">
-                                        <div class="inner">
-                                    <div class="flex2 flex-5">
-                                        <div class="box person">
-                                            <a href="">
-                                            <div class="image round">
-                                                <img src="images/team/Krishna Teja Killamsetty.jfif" alt="Person 3" />
-                                            </div>
-                                            <h4 style="padding-bottom:0% ;">Krishna Teja Killamsetty</h4>
-                                            <p>PhD Student, <p>UT Dallas</p></p>
-                                        </a>
-                                        </div>
-                                        <div class="box person">
-                                            <a href="https://www.linkedin.com/in/surajkothawade/">
-    
-                                            <div class="image round">
-                                                <img src="images/team/Suraj Kothawade.jfif" alt="Person 1" />
-                                            </div>
-                                            <h4>Suraj Kothawade</h4>
-                                            <p>PhD Student, <p>UT Dallas</p></p>
-                                        </div></a>
-
-                                        <div class="box person">
-                                            <a href="https://www.cse.iitb.ac.in/~parthlaturia/">
-    
-                                            <div class="image round">
-                                                <img src="images/team/Parth Laturia.jpg" alt="Person 2" />
-                                            </div>
-                                            <h4>Parth Laturia</h4>
-                                            <p>B.Tech, <p>IIT Bombay</p></p></a>
-                                       
-                                        </div>
-                                        <div class="box person">
-                                            <a href="https://www.cse.iitb.ac.in/~ayusham/index.html">
-    
-                                            <div class="image round">
-                                                <img src="images/team/Ayush Maheshwari.jpeg" alt="Person 2" />
-                                            </div>
-                                            <h4>Ayush Maheshwari</h4>
-                                            <p>PhD Student, <p>IIT Bombay</p></p>
-                                        </a>
-                                        </div>
-                                        <div class="box person">
-                                            <a href="">
-    
-                                            <div class="image round">
-                                                <img src="images/team/Durga Sivasubramanian.jpg" alt="Person 2" />
-                                            </div>
-                                            <h4>Durga Sivasubramanian</h4>
-                                            <p>PhD Student, <p>IIT Bombay</p></p>
-                                        </a>
-                                        </div>
-    
-    
-                                    </div>
-    
-                                </div>
-                            </div>
-                        </section>
-                        <div class="d-flex">
-                            <!-- <hr class="my-auto flex-grow-1"> -->
-            
-                            <hr class="my-auto flex-grow-1">
-                            </div>
-                                <div class="container container--md align-center" style="padding-top: 2%;">
-                                    <h3 class="section__title">Interns</h3>
-                                </div>
-                            <section id="two" class="  container  align-center" style="padding-bottom: 6%;">
-                                    <div class="inner">
-                                <div class="flex2 flex-5">
-                                    <div class="box person">
-                                        <a href="https://www.linkedin.com/in/dheerajnbhat/">
-
-                                        <div class="image round">
-                                            <img src="images/team/Dheeraj Bhat.jpg" alt="Person 1" />
-                                        </div>
-                                        <h4>Dheeraj Bhat</h4>
-                                        <p>Intern, <p>IIT Bombay</p></p> </a>
-                                    </div></a>
-                                    <div class="box person">
-                                        <a href="https://www.linkedin.com/in/apurvadani98/">
-
-                                        <div class="image round">
-                                            <img src="images/team/Apurva Dani.jfif" alt="Person 2" />
-                                        </div>
-                                        <h4>Apurva Dani</h4>
-                                        <p>Intern, <p>IIT Bombay</p></p> </a>
-                                    </div>
-                                    <div class="box person">
-                                        <a href="https://stevejefferson.live/">
-
-                                        <div class="image round">
-                                            <img src="images/team/stevejefferson.jpg" alt="Person 2" />
-                                        </div>
-                                        <h4>Steve Jefferson</h4>
-                                        <p>Intern, <p>IIT Bombay</p></p></a>
-                                    </div>
-                                    <div class="box person">
-                                        <a href="https://www.linkedin.com/in/vinayaksharmalink/">
-
-                                        <div class="image round">
-                                            <img src="images/team/Vinayak Sharma.jpeg" alt="Person 2" />
-                                        </div>
-                                        <h4>Vinayak Sharma</h4>
-                                        <p>Intern,<p>IIT Bombay</p> </p> </a>
-                                    </div>
-                                    <div class="box person">
-                                        <a href="https://www.linkedin.com/in/amansuman/">
-
-                                        <div class="image round">
-                                            <img src="images/team/Aman Image.jpg" alt="Person 2" />
-                                        </div>
-                                        <h4>Aman Suman</h4>
-                                        <p>Intern,<p>IIT Bombay</p> </p> </a>
-                                    </div>
-
-                                </div>
 
                         </div>
-                        </section>
+            </div>
 
+        </div>
+        <div class="d-flex">
 
-
-                    <section id="Research" class="section section--posts">
-                        <div class="container container--md align-center">
-                            <h2 class="section__title">Research Publications</h2>
-                        </div>
-                        <div class="container container--lg">
-                            <div class="d-flex">
-                                <hr class="my-auto flex-grow-1">
-                                <div class="px-4">CORDS</div>
-                                <hr class="my-auto flex-grow-1">
+            <section id="two" class="  container  align-center" style="padding-bottom: 6%;">
+                <div class="inner">
+                    <div class="flex2 flex-5">
+                        <div class="box person">
+                            <a href="">
+                                <div class="image round">
+                                    <img src="images/team/Krishna Teja Killamsetty.jfif" alt="Person 3" />
                                 </div>
-                            <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="http://proceedings.mlr.press/v37/wei15.pdf">
-                                    Submodularity in data subset selection and active learning
-                                </a>
-                                <p class="paper-authors">
-                                    Kai Wei, Rishabh Iyer, Jeff Bilmes 
+                                <h4 style="padding-bottom:0% ;">Krishna Teja Killamsetty</h4>
+                                <p>PhD Student, <p>UT Dallas</p>
                                 </p>
-                                <p class="paper-conference">
-                                    International Conference on Machine Learning (ICML) 2015
+                            </a>
+                        </div>
+                        <div class="box person">
+                            <a href="https://www.linkedin.com/in/surajkothawade/">
+
+                                <div class="image round">
+                                    <img src="images/team/Suraj Kothawade.jfif" alt="Person 1" />
+                                </div>
+                                <h4>Suraj Kothawade</h4>
+                                <p>PhD Student, <p>UT Dallas</p>
                                 </p>
-                              </div>
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://www.cse.iitb.ac.in/~ganesh/papers/wacv2019b.pdf">
-                                    Learning From Less Data: A Unified Data Subset Selection and Active Learning Framework for Computer Vision
-                                </a>
-                                <p class="paper-authors">
-                                    Vishal Kaushal, Rishabh Iyer, Suraj Kothiwade, Rohan Mahadev, Khoshrav Doctor, and Ganesh Ramakrishnan
+                        </div></a>
+
+                        <div class="box person">
+                            <a href="https://www.cse.iitb.ac.in/~parthlaturia/">
+
+                                <div class="image round">
+                                    <img src="images/team/Parth Laturia.jpg" alt="Person 2" />
+                                </div>
+                                <h4>Parth Laturia</h4>
+                                <p>B.Tech, <p>IIT Bombay</p>
                                 </p>
-                                <p class="paper-conference">
-                                    7th IEEE Winter Conference on Applications of Computer Vision (WACV), 2019 Hawaii, USA
+                            </a>
+
+                        </div>
+                        <div class="box person">
+                            <a href="https://www.cse.iitb.ac.in/~ayusham/index.html">
+
+                                <div class="image round">
+                                    <img src="images/team/Ayush Maheshwari.jpeg" alt="Person 2" />
+                                </div>
+                                <h4>Ayush Maheshwari</h4>
+                                <p>PhD Student, <p>IIT Bombay</p>
                                 </p>
-                              </div>
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://arxiv.org/pdf/2012.10630.pdf">
-                                    GLISTER: Generalization based Data Subset Selection for Efficient and Robust Learning
-                                </a>
-                                <p class="paper-authors">
-                                    Krishnateja Killamsetty, Durga Sivasubramanian, Ganesh Ramakrishnan, and Rishabh Iyer
+                            </a>
+                        </div>
+                        <div class="box person">
+                            <a href="">
+
+                                <div class="image round">
+                                    <img src="images/team/Durga Sivasubramanian.jpg" alt="Person 2" />
+                                </div>
+                                <h4>Durga Sivasubramanian</h4>
+                                <p>PhD Student, <p>IIT Bombay</p>
                                 </p>
-                                <p class="paper-conference">
-                                    35th AAAI Conference on Artificial Intelligence, AAAI 2021
-                                </p>
-                              </div>
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="http://www.jmlr.org/proceedings/papers/v32/wei14.pdf">
-                                    Fast multi-stage submodular maximization
-                                </a>
-                                <p class="paper-authors">
-                                    Kai Wei, Rishabh K. Iyer, Jeff A. Bilmes
-                                </p>
-                                <p class="paper-conference">
-                                    International Conference on Machine Learning (ICML 2014)
-                                </p>
-                              </div>
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://ieeexplore.ieee.org/document/6854213">
-                                    Submodular subset selection for large-scale speech training data
-                                </a>
-                                <p class="paper-authors">
-                                    Wei, Kai, et al
-                                </p>
-                                <p class="paper-conference">
-                                    2014 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), IEEE, 2014
-                                </p>
-                              </div>
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://arxiv.org/abs/1906.01827">
-                                    Coresets for Data-efficient Training of Machine Learning Models
-                                </a>
-                                <p class="paper-authors">
-                                    Baharan Mirzasoleiman, Jeff Bilmes, and Jure Leskovec
-                                </p>
-                                <p class="paper-conference">
-                                  International Conference on Machine Learning (ICML), July 2020
-                                </p>
-                              </div>
-                              <!--<div class="paper XXsnipcss_extracted_selector_selectionXX">
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+        </div>
+        </section>
+        <div class="d-flex">
+            <!-- <hr class="my-auto flex-grow-1"> -->
+
+            <hr class="my-auto flex-grow-1">
+        </div>
+        <div class="container container--md align-center" style="padding-top: 2%;">
+            <h3 class="section__title">Interns</h3>
+        </div>
+        <section id="two" class="  container  align-center" style="padding-bottom: 6%;">
+            <div class="inner">
+                <div class="flex2 flex-5">
+                    <div class="box person">
+                        <a href="https://www.linkedin.com/in/dheerajnbhat/">
+
+                            <div class="image round">
+                                <img src="images/team/Dheeraj Bhat.jpg" alt="Person 1" />
+                            </div>
+                            <h4>Dheeraj Bhat</h4>
+                            <p>Intern, <p>IIT Bombay</p>
+                            </p>
+                        </a>
+                    </div></a>
+                    <div class="box person">
+                        <a href="https://www.linkedin.com/in/apurvadani98/">
+
+                            <div class="image round">
+                                <img src="images/team/Apurva Dani.jfif" alt="Person 2" />
+                            </div>
+                            <h4>Apurva Dani</h4>
+                            <p>Intern, <p>IIT Bombay</p>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="box person">
+                        <a href="https://stevejefferson.live/">
+
+                            <div class="image round">
+                                <img src="images/team/stevejefferson.jpg" alt="Person 2" />
+                            </div>
+                            <h4>Steve Jefferson</h4>
+                            <p>Intern, <p>IIT Bombay</p>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="box person">
+                        <a href="https://www.linkedin.com/in/vinayaksharmalink/">
+
+                            <div class="image round">
+                                <img src="images/team/Vinayak Sharma.jpeg" alt="Person 2" />
+                            </div>
+                            <h4>Vinayak Sharma</h4>
+                            <p>Intern,<p>IIT Bombay</p>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="box person">
+                        <a href="https://www.linkedin.com/in/amansuman/">
+
+                            <div class="image round">
+                                <img src="images/team/Aman Image.jpg" alt="Person 2" />
+                            </div>
+                            <h4>Aman Suman</h4>
+                            <p>Intern,<p>IIT Bombay</p>
+                            </p>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section id="Research" class="section section--posts">
+            <div class="container container--md align-center">
+                <h2 class="section__title">Research Publications</h2>
+            </div>
+            <div class="container container--lg">
+                <div class="d-flex">
+                    <hr class="my-auto flex-grow-1">
+                    <div class="px-4">CORDS</div>
+                    <hr class="my-auto flex-grow-1">
+                </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="http://proceedings.mlr.press/v37/wei15.pdf">
+                        Submodularity in data subset selection and active learning
+                    </a>
+                    <p class="paper-authors">
+                        Kai Wei, Rishabh Iyer, Jeff Bilmes
+                    </p>
+                    <p class="paper-conference">
+                        International Conference on Machine Learning (ICML) 2015
+                    </p>
+                </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank"
+                        href="https://www.cse.iitb.ac.in/~ganesh/papers/wacv2019b.pdf">
+                        Learning From Less Data: A Unified Data Subset Selection and Active Learning Framework for
+                        Computer Vision
+                    </a>
+                    <p class="paper-authors">
+                        Vishal Kaushal, Rishabh Iyer, Suraj Kothiwade, Rohan Mahadev, Khoshrav Doctor, and Ganesh
+                        Ramakrishnan
+                    </p>
+                    <p class="paper-conference">
+                        7th IEEE Winter Conference on Applications of Computer Vision (WACV), 2019 Hawaii, USA
+                    </p>
+                </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="https://arxiv.org/pdf/2012.10630.pdf">
+                        GLISTER: Generalization based Data Subset Selection for Efficient and Robust Learning
+                    </a>
+                    <p class="paper-authors">
+                        Krishnateja Killamsetty, Durga Sivasubramanian, Ganesh Ramakrishnan, and Rishabh Iyer
+                    </p>
+                    <p class="paper-conference">
+                        35th AAAI Conference on Artificial Intelligence, AAAI 2021
+                    </p>
+                </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="http://www.jmlr.org/proceedings/papers/v32/wei14.pdf">
+                        Fast multi-stage submodular maximization
+                    </a>
+                    <p class="paper-authors">
+                        Kai Wei, Rishabh K. Iyer, Jeff A. Bilmes
+                    </p>
+                    <p class="paper-conference">
+                        International Conference on Machine Learning (ICML 2014)
+                    </p>
+                </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="https://ieeexplore.ieee.org/document/6854213">
+                        Submodular subset selection for large-scale speech training data
+                    </a>
+                    <p class="paper-authors">
+                        Wei, Kai, et al
+                    </p>
+                    <p class="paper-conference">
+                        2014 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), IEEE,
+                        2014
+                    </p>
+                </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="https://arxiv.org/abs/1906.01827">
+                        Coresets for Data-efficient Training of Machine Learning Models
+                    </a>
+                    <p class="paper-authors">
+                        Baharan Mirzasoleiman, Jeff Bilmes, and Jure Leskovec
+                    </p>
+                    <p class="paper-conference">
+                        International Conference on Machine Learning (ICML), July 2020
+                    </p>
+                </div>
+                <!--<div class="paper XXsnipcss_extracted_selector_selectionXX">
                                 <a class="paper-title" target="_blank" href="https://www.google.com">
                                     Grad-Match: A Gradient Matching based Data Selection Framework for Efficient Learning (can we list it? It is not yet on arxiv)
                                 </a>
@@ -596,401 +702,439 @@
                                   to be published
                                 </p>
                               </div>-->
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://arxiv.org/pdf/2011.07451.pdf">
-                                    Coresets for Robust Training of Deep Neural Networks against Noisy Labels
-                                </a>
-                                <p class="paper-authors">
-                                    Baharan Mirzasoleiman, Kaidi Cao, Jure Leskovec
-                                </p>
-                                <p class="paper-conference">
-                                  InProc. Advances in Neural Information Processing Systems (NeurIPS), 2020
-                                </p>
-                              </div>
-                              
-                                <div class="d-flex">
-                                <hr class="my-auto flex-grow-1">
-                                <div class="px-4">DISTIL</div>
-                                <hr class="my-auto flex-grow-1">
-                                </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="https://arxiv.org/pdf/2011.07451.pdf">
+                        Coresets for Robust Training of Deep Neural Networks against Noisy Labels
+                    </a>
+                    <p class="paper-authors">
+                        Baharan Mirzasoleiman, Kaidi Cao, Jure Leskovec
+                    </p>
+                    <p class="paper-conference">
+                        InProc. Advances in Neural Information Processing Systems (NeurIPS), 2020
+                    </p>
+                </div>
 
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="http://proceedings.mlr.press/v37/wei15.pdf">
-                                    Submodularity in data subset selection and active learning
-                                </a>
-                                <p class="paper-authors">
-                                    Kai Wei, Rishabh Iyer, Jeff Bilmes
-                                </p>
-                                <p class="paper-conference">
-                                    International Conference on Machine Learning (ICML) 2015
-                                </p>
-                              </div>
-                              
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://arxiv.org/abs/1906.03671">
-                                    Deep batch active learning by diverse, uncertain gradient lower bounds.
-                                </a>
-                                <p class="paper-authors">
-                                    Ash, Jordan T., et al.
-                                </p>
-                                <p class="paper-conference">
-                                    8th International Conference on Learning Representations (ICLR), 2020
-                                </p>
-                              </div>
+                <div class="d-flex">
+                    <hr class="my-auto flex-grow-1">
+                    <div class="px-4">DISTIL</div>
+                    <hr class="my-auto flex-grow-1">
+                </div>
 
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://arxiv.org/pdf/2012.10630.pdf">
-                                    GLISTER: Generalization based Data Subset Selection for Efficient and Robust Learning
-                                </a>
-                                <p class="paper-authors">
-                                    Krishnateja Killamsetty, Durga Sivasubramanian, Ganesh Ramakrishnan, and Rishabh Iyer
-                                </p>
-                                <p class="paper-conference">
-                                    In Proceedings of the 35th AAAI Conference on Artificial Intelligence, AAAI 2021	
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="http://proceedings.mlr.press/v37/wei15.pdf">
+                        Submodularity in data subset selection and active learning
+                    </a>
+                    <p class="paper-authors">
+                        Kai Wei, Rishabh Iyer, Jeff Bilmes
+                    </p>
+                    <p class="paper-conference">
+                        International Conference on Machine Learning (ICML) 2015
+                    </p>
+                </div>
 
-                                </p>
-                              </div>
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17165">
-                                An Interactive Multi-Label Consensus Labeling Model for Multiple Labeler Judgments
-                                </a>
-                                <p class="paper-authors">
-                                    Ashish Kulkarni, Narasimha Raju Uppalapati, Pankaj Singh, Ganesh
-                                    Ramakrishnan
-                                </p>
-                                <p class="paper-conference">
-                                    In Proceedings of the 32th AAAI Conference on Artificial Intelligence, AAAI 2018
-                                </p>
-                              </div>
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://ieeexplore.ieee.org/document/8658965">
-                                    Learning From Less Data: Diversified Subset Selection and Active Learning in Image Classification Tasks
-                                </a>
-                                <p class="paper-authors">
-                                    Vishal Kaushal, Rishabh Iyer, Anurag Sahoo, Khoshrav Doctor, Narasimha Raju, Ganesh Ramakrishnan
-                                </p>
-                                <p class="paper-conference">
-                                    In Proceedings of The 7th IEEE Winter Conference on Applications of Computer Vision (WACV), 2019, Hawaii, USA
-                                </p>
-                              </div>
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://ieeexplore.ieee.org/document/6889457">
-                                    A New Active Labeling Method for Deep Learning
-                                </a>
-                                <p class="paper-authors">
-                                    Dan Wang, Yi Shang
-                                </p>
-                                <p class="paper-conference">
-                                    International Joint Conference on Neural Networks (IJCNN), 2014
-                                </p>
-                              </div>
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://arxiv.org/abs/1703.02910">
-                                    Deep Bayesian Active Learning with Image Data
-                                </a>
-                                <p class="paper-authors">
-                                    Yarin Gal, Riashat Islam, Zoubin Ghahramani
-                                </p>
-                                <p class="paper-conference">
-                                    34th International Conference on Machine Learning(ICML), 2017
-                                </p>
-                              </div>
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://openreview.net/forum?id=H1aIuk-RW">
-                                    Active Learning for Convolutional Neural Networks: A Core-Set Approach
-                                </a>
-                                <p class="paper-authors">
-                                    Ozan Sener, Silvio Savarese
-                                </p>
-                                <p class="paper-conference">
-                                    6th International Conference on Learning Representations (ICLR), 2018
-                                </p>
-                              </div>
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://arxiv.org/abs/1802.09841">
-                                Adversarial Active Learning for Deep Networks: a Margin Based Approach
-                                </a>
-                                <p class="paper-authors">
-                                    Melanie Ducoffe, Frederic Precioso
-                                </p>
-                                <p class="paper-conference">
-                                    arXiv, 2018.
-                                </p>
-                              </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="https://arxiv.org/abs/1906.03671">
+                        Deep batch active learning by diverse, uncertain gradient lower bounds.
+                    </a>
+                    <p class="paper-authors">
+                        Ash, Jordan T., et al.
+                    </p>
+                    <p class="paper-conference">
+                        8th International Conference on Learning Representations (ICLR), 2020
+                    </p>
+                </div>
 
-                              <div class="d-flex">
-                                <hr class="my-auto flex-grow-1">
-                                <div class="px-4">SUBMODLIB </div>
-                                <hr class="my-auto flex-grow-1">
-                                </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="https://arxiv.org/pdf/2012.10630.pdf">
+                        GLISTER: Generalization based Data Subset Selection for Efficient and Robust Learning
+                    </a>
+                    <p class="paper-authors">
+                        Krishnateja Killamsetty, Durga Sivasubramanian, Ganesh Ramakrishnan, and Rishabh Iyer
+                    </p>
+                    <p class="paper-conference">
+                        In Proceedings of the 35th AAAI Conference on Artificial Intelligence, AAAI 2021
 
+                    </p>
+                </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank"
+                        href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17165">
+                        An Interactive Multi-Label Consensus Labeling Model for Multiple Labeler Judgments
+                    </a>
+                    <p class="paper-authors">
+                        Ashish Kulkarni, Narasimha Raju Uppalapati, Pankaj Singh, Ganesh
+                        Ramakrishnan
+                    </p>
+                    <p class="paper-conference">
+                        In Proceedings of the 32th AAAI Conference on Artificial Intelligence, AAAI 2018
+                    </p>
+                </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="https://ieeexplore.ieee.org/document/8658965">
+                        Learning From Less Data: Diversified Subset Selection and Active Learning in Image
+                        Classification Tasks
+                    </a>
+                    <p class="paper-authors">
+                        Vishal Kaushal, Rishabh Iyer, Anurag Sahoo, Khoshrav Doctor, Narasimha Raju, Ganesh Ramakrishnan
+                    </p>
+                    <p class="paper-conference">
+                        In Proceedings of The 7th IEEE Winter Conference on Applications of Computer Vision (WACV),
+                        2019, Hawaii, USA
+                    </p>
+                </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="https://ieeexplore.ieee.org/document/6889457">
+                        A New Active Labeling Method for Deep Learning
+                    </a>
+                    <p class="paper-authors">
+                        Dan Wang, Yi Shang
+                    </p>
+                    <p class="paper-conference">
+                        International Joint Conference on Neural Networks (IJCNN), 2014
+                    </p>
+                </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="https://arxiv.org/abs/1703.02910">
+                        Deep Bayesian Active Learning with Image Data
+                    </a>
+                    <p class="paper-authors">
+                        Yarin Gal, Riashat Islam, Zoubin Ghahramani
+                    </p>
+                    <p class="paper-conference">
+                        34th International Conference on Machine Learning(ICML), 2017
+                    </p>
+                </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="https://openreview.net/forum?id=H1aIuk-RW">
+                        Active Learning for Convolutional Neural Networks: A Core-Set Approach
+                    </a>
+                    <p class="paper-authors">
+                        Ozan Sener, Silvio Savarese
+                    </p>
+                    <p class="paper-conference">
+                        6th International Conference on Learning Representations (ICLR), 2018
+                    </p>
+                </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="https://arxiv.org/abs/1802.09841">
+                        Adversarial Active Learning for Deep Networks: a Margin Based Approach
+                    </a>
+                    <p class="paper-authors">
+                        Melanie Ducoffe, Frederic Precioso
+                    </p>
+                    <p class="paper-conference">
+                        arXiv, 2018.
+                    </p>
+                </div>
 
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://doi.org/10.1109/WACV.2019.00076">
-                                    A Framework towards Domain Specific Video Summarization
-                                </a>
-                                <p class="paper-authors">
-                                    Vishal Kaushal, Sandeep Subramanian, Suraj Kothawade, Rishabh Iyer, Ganesh Ramakrishnan
-                                </p>
-                                <p class="paper-conference">
-                                    In Proceedings of The 7th IEEE Winter Conference on Applications of Computer Vision (WACV), 2019, Hawaii, USA.
-                                </p>
-                              </div>
-
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://doi.org/10.1109/WACV.2019.00054">
-                                    Demystifying Multi-Faceted Video Summarization: Tradeoff Between Diversity,Representation, Coverage and Importance
-                                </a>
-                                <p class="paper-authors">
-                                    Vishal Kaushal, Rishabh Iyer, Anurag Sahoo, Pratik Dubal, Suraj Kothawade, Rohan Mahadev, Kunal Dargan, Ganesh Ramakrishnan
-                                </p>
-                                <p class="paper-conference">
-                                    n Proceedings of The 7th IEEE Winter Conference on Applications of Computer Vision (WACV), 2019, Hawaii, USA.
-                                </p>
-                              </div>
-
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16911">
-                                    Synthesis of Programs from Multimodal Datasets
-                                </a>
-                                <p class="paper-authors">
-                                    Shantanu Thakoor, Simoni Shah, Ganesh Ramakrishnan, Amitabha Sanyal
-                                </p>
-                                <p class="paper-conference">
-                                    In Proceedings of the 32nd AAAI Conference on Artificial Intelligence (AAAI-18), New Orleans, Louisiana, USA.
-                                </p>
-                              </div>
-
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://www.cse.iitb.ac.in/~ganesh/papers/cikm16a.pdf">
-                                    Beyond clustering: Sub-DAG Discovery for Categorising Documents
-                                </a>
-                                <p class="paper-authors">
-                                    Ramakrishna Bairi, Mark Carman and Ganesh Ramakrishnan
-                                </p>
-                                <p class="paper-conference">
-                                    In Proceedings of the 25th International Conference on Information and Knowledge Management (CIKM 2016), Indianapolis, USA
-                                </p>
-                              </div>
+                <div class="d-flex">
+                    <hr class="my-auto flex-grow-1">
+                    <div class="px-4">SUBMODLIB </div>
+                    <hr class="my-auto flex-grow-1">
+                </div>
 
 
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://doi.org/10.1007/978-3-319-31753-3_24">
-                                    Building Compact Lexicons for Cross-Domain SMT by mining near-optimal Pattern Sets
-                                </a>
-                                <p class="paper-authors">
-                                    Pankaj Singh, Ashish Kulkarni, Himanshu Ojha, Vishwajeet Kumar, Ganesh Ramakrishnan,
-                                </p>
-                                <p class="paper-conference">
-                                    In Proceedings of the 20th Pacific Asia Conference on Knowledge Discovery and Data Mining (PAKDD) 2016.
-                                </p>
-                              </div>
-                              
-                              <div class="d-flex">
-                                <hr class="my-auto flex-grow-1">
-                                <div class="px-4">SPEAR </div>
-                                <hr class="my-auto flex-grow-1">
-                                </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="https://doi.org/10.1109/WACV.2019.00076">
+                        A Framework towards Domain Specific Video Summarization
+                    </a>
+                    <p class="paper-authors">
+                        Vishal Kaushal, Sandeep Subramanian, Suraj Kothawade, Rishabh Iyer, Ganesh Ramakrishnan
+                    </p>
+                    <p class="paper-conference">
+                        In Proceedings of The 7th IEEE Winter Conference on Applications of Computer Vision (WACV),
+                        2019, Hawaii, USA.
+                    </p>
+                </div>
 
-                              
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://aaai.org/ojs/index.php/AAAI/article/view/5742">
-                                    Data Programming using Continuous and Quality-Guided Labeling Function
-                                </a>
-                                <p class="paper-authors">
-                                    Oishik Chatterjee, Ganesh Ramakrishnan, Sunita Sarawagi
-                                </p>
-                                <p class="paper-conference">
-                                    In Proceedings of The Thirty-Fourth AAAI Conferenceon Artificial Intelligence (AAAI 2020), New York, USA.
-                                    
-                                </p>
-                              </div>
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17165">
-                                An Interactive Multi-Label Consensus Labeling Model for Multiple Labeler Judgments
-                                </a>
-                                <p class="paper-authors">
-                                    Ashish Kulkarni, Narasimha Raju Uppalapati, Pankaj Singh, Ganesh
-                                    Ramakrishnan
-                                </p>
-                                <p class="paper-conference">
-                                    In Proceedings of the 32nd AAAI Conference on Artificial Intelligence (AAAI-18), New Orleans, Louisiana, USA.
-                                </p>
-                              </div>
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16911">
-                                    Synthesis of Programs from Multimodal Datasets
-                                </a>
-                                <p class="paper-authors">
-                                    Shantanu Thakoor, Simoni Shah, Ganesh Ramakrishnan, Amitabha Sanyal
-                                </p>
-                                <p class="paper-conference">
-                                    In
-                                    Proceedings of the 32nd AAAI Conference on Artificial Intelligence (AAAI-18), New Orleans, Louisiana, USA.
-                                    
-                                </p>
-                              </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="https://doi.org/10.1109/WACV.2019.00054">
+                        Demystifying Multi-Faceted Video Summarization: Tradeoff Between Diversity,Representation,
+                        Coverage and Importance
+                    </a>
+                    <p class="paper-authors">
+                        Vishal Kaushal, Rishabh Iyer, Anurag Sahoo, Pratik Dubal, Suraj Kothawade, Rohan Mahadev, Kunal
+                        Dargan, Ganesh Ramakrishnan
+                    </p>
+                    <p class="paper-conference">
+                        n Proceedings of The 7th IEEE Winter Conference on Applications of Computer Vision (WACV), 2019,
+                        Hawaii, USA.
+                    </p>
+                </div>
+
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank"
+                        href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16911">
+                        Synthesis of Programs from Multimodal Datasets
+                    </a>
+                    <p class="paper-authors">
+                        Shantanu Thakoor, Simoni Shah, Ganesh Ramakrishnan, Amitabha Sanyal
+                    </p>
+                    <p class="paper-conference">
+                        In Proceedings of the 32nd AAAI Conference on Artificial Intelligence (AAAI-18), New Orleans,
+                        Louisiana, USA.
+                    </p>
+                </div>
+
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="https://www.cse.iitb.ac.in/~ganesh/papers/cikm16a.pdf">
+                        Beyond clustering: Sub-DAG Discovery for Categorising Documents
+                    </a>
+                    <p class="paper-authors">
+                        Ramakrishna Bairi, Mark Carman and Ganesh Ramakrishnan
+                    </p>
+                    <p class="paper-conference">
+                        In Proceedings of the 25th International Conference on Information and Knowledge Management
+                        (CIKM 2016), Indianapolis, USA
+                    </p>
+                </div>
 
 
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="http://ceur-ws.org/Vol-1187/paper-06.pdf">
-                                    Comparison between Explicit Learning and Implicit Modeling of Relational Features in Structured Output Spaces
-                                </a>
-                                <p class="paper-authors">
-                                    Ajay Nagesh, Naveen Nair and Ganesh Ramakrishnan
-                                </p>
-                                <p class="paper-conference">
-                                    In Proceedings of the 23rd International Conference on Inductive Logic Programming (ILP), 2013, Rio De Janerio, Brazil.
-                                    
-                                </p>
-                              </div>
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://www.aclweb.org/anthology/D12-1012/">
-                                    Towards Efficient Named-Entity Rule Induction for Customizability
-                                </a>
-                                <p class="paper-authors">
-                                    Ajay Nagesh, Ganesh Ramakrishnan, Laura Chiticariu, Rajasekar Krishnamurthy, Ankush Dharkar, Pushpak Bhattacharyya
-                                </p>
-                                <p class="paper-conference">
-                                    In Proceedings of the 2012 Conference on Empirical Methods in Natural Language Processing (EMNLP), 2012, Jeju, Korea.
-                                    
-                                </p>
-                              </div>
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="http://www.aaai.org/ocs/index.php/AAAI/AAAI12/paper/view/4918">
-                                    Rule Ensemble Learning Using Hierarchical Kernels in Structured Output Spaces
-                                </a>
-                                <p class="paper-authors">
-                                    Naveen Nair, Amrita Saha, Ganesh Ramakrishnan, Shonali Krishnaswamy
-                                </p>
-                                <p class="paper-conference">
-                                    In Proceedings of the Twenty-Sixth Conference on Artificial Intelligence (AAAI), 2012, Toronto, Canada.
-                                    
-                                </p>
-                              </div>
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://doi.org/10.1007/978-3-642-38812-5_15">
-                                    What Kinds of Relational Features are Useful for Statistical Learning?
-                                </a>
-                                <p class="paper-authors">
-                                    Amrita Saha, Ashwin Srinivasan, Ganesh Ramakrishnan
-                                </p>
-                                <p class="paper-conference">
-                                    In Proceedings of the 22nd International Conference on Inductive Logic Programming (ILP), 2012, Dubrovnik
-                                    
-                                </p>
-                              </div>
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://doi.org/10.1007/978-3-642-38812-5_14">
-                                    Probing the Space of Optimal Markov Logic Networks for Sequence Labeling
-                                </a>
-                                <p class="paper-authors">
-                                    Naveen Nair, Ajay Nagesh, Ganesh Ramakrishnan
-                                </p>
-                                <p class="paper-conference">
-                                    In Proceedings of the 22rd International Conference on Inductive Logic Programming (ILP), 2012
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="https://doi.org/10.1007/978-3-319-31753-3_24">
+                        Building Compact Lexicons for Cross-Domain SMT by mining near-optimal Pattern Sets
+                    </a>
+                    <p class="paper-authors">
+                        Pankaj Singh, Ashish Kulkarni, Himanshu Ojha, Vishwajeet Kumar, Ganesh Ramakrishnan,
+                    </p>
+                    <p class="paper-conference">
+                        In Proceedings of the 20th Pacific Asia Conference on Knowledge Discovery and Data Mining
+                        (PAKDD) 2016.
+                    </p>
+                </div>
 
-                                    
-                                </p>
-                              </div>
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://icml.cc/2011/papers/143_icmlpaper.pdf">
-                                    Efficient Rule Ensemble Learning using Hierarchical Kernels
-                                </a>
-                                <p class="paper-authors">
-                                    Pratik Jawanpuria, Saketha Nath and Ganesh Ramakrishnan
-                                </p>
-                                <p class="paper-conference">
-                                    In Proceedings of the 28th International Conference on Machine Learning, 2011
+                <div class="d-flex">
+                    <hr class="my-auto flex-grow-1">
+                    <div class="px-4">SPEAR </div>
+                    <hr class="my-auto flex-grow-1">
+                </div>
 
-                                    
-                                </p>
-                              </div>
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://doi.org/10.1007/978-3-642-21295-6_20">
-                                    Pruning Search Space for Weighted First Order Horn Clause Satisfiability
-                                </a>
-                                <p class="paper-authors">
-                                    Naveen Nair, Chander Jayaraman, Kiran TVS and Ganesh Ramakrishnan
-                                </p>
-                                <p class="paper-conference">
-                                    In Proceedings of the 20rd International Conference on Inductive Logic Programming (ILP), Florence, Italy
 
-                                    
-                                </p>
-                              </div>
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://doi.org/10.1007/978-3-642-21295-6_16">
-                                    BET : An Inductive Logic Programming Workbench
-                                </a>
-                                <p class="paper-authors">
-                                    Srihari Kalgi, Chirag Gosar, Prasad Gawde, Ganesh Ramakrishnan, Chander Iyer, Kiran T V S, Kekin Gada and Ashwin Srinivasan
-                                </p>
-                                <p class="paper-conference">
-                                    In Proceedings of the 20rd International Conference on Inductive Logic Programming (ILP), Florence, Italy
-                                    
-                                </p>
-                              </div>
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://doi.org/10.1007/978-3-642-13840-9_21">
-                                    Parameter Screening and Optimisation for ILP using Designed Experiments
-                                </a>
-                                <p class="paper-authors">
-                                    Ashwin Srinivasan, Ganesh Ramakrishnan
-                                </p>
-                                <p class="paper-conference">
-                                    In the Journal of Machine Learning Research 11 (2010) 3481-3516
-                                    
-                                </p>
-                              </div>
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://doi.org/10.1007/s10994-009-5114-x">
-                                    An Investigation into Feature Construction to Assist Word Sense Disambiguation
-                                </a>
-                                <p class="paper-authors">
-                                    Lucia Specia, Ashwin Srinivasan, Ganesh Ramakrishnan, Sachindra Joshi and Maria das Gracas Volpe Nunes
-                                </p>
-                                <p class="paper-conference">
-                                    In Machine Learning 76(1): 109-136 (2009)
-                                    
-                                </p>
-                              </div>
-                              <div class="paper XXsnipcss_extracted_selector_selectionXX">
-                                <a class="paper-title" target="_blank" href="https://doi.org/10.1007/978-3-540-85928-4_14">
-                                    Feature Construction using Theory-Guided Sampling and Randomised Search
-                                </a>
-                                <p class="paper-authors">
-                                    Sachindra Joshi, Ganesh Ramakrishnan, and Ashwin Srinivasan
-                                </p>
-                                <p class="paper-conference">
-                                    In Proceedings of the 18th International Conference on Inductive Logic Programming (ILP 2008), Prague, Czech Republic, September 10-12, 2008
-                                    
-                                </p>
-                              </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="https://aaai.org/ojs/index.php/AAAI/article/view/5742">
+                        Data Programming using Continuous and Quality-Guided Labeling Function
+                    </a>
+                    <p class="paper-authors">
+                        Oishik Chatterjee, Ganesh Ramakrishnan, Sunita Sarawagi
+                    </p>
+                    <p class="paper-conference">
+                        In Proceedings of The Thirty-Fourth AAAI Conferenceon Artificial Intelligence (AAAI 2020), New
+                        York, USA.
 
-                              </div>
+                    </p>
+                </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank"
+                        href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17165">
+                        An Interactive Multi-Label Consensus Labeling Model for Multiple Labeler Judgments
+                    </a>
+                    <p class="paper-authors">
+                        Ashish Kulkarni, Narasimha Raju Uppalapati, Pankaj Singh, Ganesh
+                        Ramakrishnan
+                    </p>
+                    <p class="paper-conference">
+                        In Proceedings of the 32nd AAAI Conference on Artificial Intelligence (AAAI-18), New Orleans,
+                        Louisiana, USA.
+                    </p>
+                </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank"
+                        href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16911">
+                        Synthesis of Programs from Multimodal Datasets
+                    </a>
+                    <p class="paper-authors">
+                        Shantanu Thakoor, Simoni Shah, Ganesh Ramakrishnan, Amitabha Sanyal
+                    </p>
+                    <p class="paper-conference">
+                        In
+                        Proceedings of the 32nd AAAI Conference on Artificial Intelligence (AAAI-18), New Orleans,
+                        Louisiana, USA.
 
-                   
-                    </section>
-                </main>
-                <footer class="site-footer">
-                    <div class="container container--lg">
-                        <div class="site-footer__copyright">
-                            &copy; 2021 DECILE. All rights reserved.
-                            <a href="https://github.com/decile-team"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Github" width="50" height="50" style="float:right"></a> 
-                            <a href="https://medium.com/@decile-research"><img src="https://icons-for-free.com/iconfiles/png/512/medium+icon-1320186682844050412.png" alt="Medium" width="50" height="50" style="float:right;padding: 2px;"></a>  
-                            <a href="https://twitter.com/decile_research"><img src="https://www.flaticon.com/svg/static/icons/svg/733/733635.svg" alt="Twitter" width="50" height="50" style="float:right;padding-left: 10px;padding-top: 4px;"></a>    
-                            <a href="https://www.youtube.com/channel/UCbBsomFm7quu-7Es3X_Ps9g"><img src="https://www.flaticon.com/svg/static/icons/svg/1384/1384012.svg" alt="Youtube" width="45" height="45" style="float:right;padding: 2px;padding-top: 4px;"></a>
-                            <a href="https://www.linkedin.com/in/decile"><img src="https://www.flaticon.com/svg/static/icons/svg/1384/1384046.svg" alt="Linkedin" width="50" height="50" style="float:right;padding: 6px;"></a> 
-                        </div>
-                        
-                    </div>
-                </footer>
+                    </p>
+                </div>
+
+
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="http://ceur-ws.org/Vol-1187/paper-06.pdf">
+                        Comparison between Explicit Learning and Implicit Modeling of Relational Features in Structured
+                        Output Spaces
+                    </a>
+                    <p class="paper-authors">
+                        Ajay Nagesh, Naveen Nair and Ganesh Ramakrishnan
+                    </p>
+                    <p class="paper-conference">
+                        In Proceedings of the 23rd International Conference on Inductive Logic Programming (ILP), 2013,
+                        Rio De Janerio, Brazil.
+
+                    </p>
+                </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="https://www.aclweb.org/anthology/D12-1012/">
+                        Towards Efficient Named-Entity Rule Induction for Customizability
+                    </a>
+                    <p class="paper-authors">
+                        Ajay Nagesh, Ganesh Ramakrishnan, Laura Chiticariu, Rajasekar Krishnamurthy, Ankush Dharkar,
+                        Pushpak Bhattacharyya
+                    </p>
+                    <p class="paper-conference">
+                        In Proceedings of the 2012 Conference on Empirical Methods in Natural Language Processing
+                        (EMNLP), 2012, Jeju, Korea.
+
+                    </p>
+                </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank"
+                        href="http://www.aaai.org/ocs/index.php/AAAI/AAAI12/paper/view/4918">
+                        Rule Ensemble Learning Using Hierarchical Kernels in Structured Output Spaces
+                    </a>
+                    <p class="paper-authors">
+                        Naveen Nair, Amrita Saha, Ganesh Ramakrishnan, Shonali Krishnaswamy
+                    </p>
+                    <p class="paper-conference">
+                        In Proceedings of the Twenty-Sixth Conference on Artificial Intelligence (AAAI), 2012, Toronto,
+                        Canada.
+
+                    </p>
+                </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="https://doi.org/10.1007/978-3-642-38812-5_15">
+                        What Kinds of Relational Features are Useful for Statistical Learning?
+                    </a>
+                    <p class="paper-authors">
+                        Amrita Saha, Ashwin Srinivasan, Ganesh Ramakrishnan
+                    </p>
+                    <p class="paper-conference">
+                        In Proceedings of the 22nd International Conference on Inductive Logic Programming (ILP), 2012,
+                        Dubrovnik
+
+                    </p>
+                </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="https://doi.org/10.1007/978-3-642-38812-5_14">
+                        Probing the Space of Optimal Markov Logic Networks for Sequence Labeling
+                    </a>
+                    <p class="paper-authors">
+                        Naveen Nair, Ajay Nagesh, Ganesh Ramakrishnan
+                    </p>
+                    <p class="paper-conference">
+                        In Proceedings of the 22rd International Conference on Inductive Logic Programming (ILP), 2012
+
+
+                    </p>
+                </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="https://icml.cc/2011/papers/143_icmlpaper.pdf">
+                        Efficient Rule Ensemble Learning using Hierarchical Kernels
+                    </a>
+                    <p class="paper-authors">
+                        Pratik Jawanpuria, Saketha Nath and Ganesh Ramakrishnan
+                    </p>
+                    <p class="paper-conference">
+                        In Proceedings of the 28th International Conference on Machine Learning, 2011
+
+
+                    </p>
+                </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="https://doi.org/10.1007/978-3-642-21295-6_20">
+                        Pruning Search Space for Weighted First Order Horn Clause Satisfiability
+                    </a>
+                    <p class="paper-authors">
+                        Naveen Nair, Chander Jayaraman, Kiran TVS and Ganesh Ramakrishnan
+                    </p>
+                    <p class="paper-conference">
+                        In Proceedings of the 20rd International Conference on Inductive Logic Programming (ILP),
+                        Florence, Italy
+
+
+                    </p>
+                </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="https://doi.org/10.1007/978-3-642-21295-6_16">
+                        BET : An Inductive Logic Programming Workbench
+                    </a>
+                    <p class="paper-authors">
+                        Srihari Kalgi, Chirag Gosar, Prasad Gawde, Ganesh Ramakrishnan, Chander Iyer, Kiran T V S, Kekin
+                        Gada and Ashwin Srinivasan
+                    </p>
+                    <p class="paper-conference">
+                        In Proceedings of the 20rd International Conference on Inductive Logic Programming (ILP),
+                        Florence, Italy
+
+                    </p>
+                </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="https://doi.org/10.1007/978-3-642-13840-9_21">
+                        Parameter Screening and Optimisation for ILP using Designed Experiments
+                    </a>
+                    <p class="paper-authors">
+                        Ashwin Srinivasan, Ganesh Ramakrishnan
+                    </p>
+                    <p class="paper-conference">
+                        In the Journal of Machine Learning Research 11 (2010) 3481-3516
+
+                    </p>
+                </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="https://doi.org/10.1007/s10994-009-5114-x">
+                        An Investigation into Feature Construction to Assist Word Sense Disambiguation
+                    </a>
+                    <p class="paper-authors">
+                        Lucia Specia, Ashwin Srinivasan, Ganesh Ramakrishnan, Sachindra Joshi and Maria das Gracas Volpe
+                        Nunes
+                    </p>
+                    <p class="paper-conference">
+                        In Machine Learning 76(1): 109-136 (2009)
+
+                    </p>
+                </div>
+                <div class="paper XXsnipcss_extracted_selector_selectionXX">
+                    <a class="paper-title" target="_blank" href="https://doi.org/10.1007/978-3-540-85928-4_14">
+                        Feature Construction using Theory-Guided Sampling and Randomised Search
+                    </a>
+                    <p class="paper-authors">
+                        Sachindra Joshi, Ganesh Ramakrishnan, and Ashwin Srinivasan
+                    </p>
+                    <p class="paper-conference">
+                        In Proceedings of the 18th International Conference on Inductive Logic Programming (ILP 2008),
+                        Prague, Czech Republic, September 10-12, 2008
+
+                    </p>
+                </div>
+
             </div>
-        </div>
-        <div id="gatsby-announcer"
-            style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0"
-            aria-live="assertive" aria-atomic="true"></div>
+
+
+        </section>
+        </main>
+        <footer class="site-footer">
+            <div class="container container--lg">
+                <div class="site-footer__copyright">
+                    &copy; 2021 DECILE. All rights reserved.
+                    <a href="https://github.com/decile-team"><img
+                            src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Github"
+                            width="50" height="50" style="float:right"></a>
+                    <a href="https://medium.com/@decile-research"><img
+                            src="https://icons-for-free.com/iconfiles/png/512/medium+icon-1320186682844050412.png"
+                            alt="Medium" width="50" height="50" style="float:right;padding: 2px;"></a>
+                    <a href="https://twitter.com/decile_research"><img
+                            src="https://www.flaticon.com/svg/static/icons/svg/733/733635.svg" alt="Twitter" width="50"
+                            height="50" style="float:right;padding-left: 10px;padding-top: 4px;"></a>
+                    <a href="https://www.youtube.com/channel/UCbBsomFm7quu-7Es3X_Ps9g"><img
+                            src="https://www.flaticon.com/svg/static/icons/svg/1384/1384012.svg" alt="Youtube"
+                            width="45" height="45" style="float:right;padding: 2px;padding-top: 4px;"></a>
+                    <a href="https://www.linkedin.com/in/decile"><img
+                            src="https://www.flaticon.com/svg/static/icons/svg/1384/1384046.svg" alt="Linkedin"
+                            width="50" height="50" style="float:right;padding: 6px;"></a>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    </div>
+    <div id="gatsby-announcer"
+        style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0"
+        aria-live="assertive" aria-atomic="true"></div>
     </div>
     <script src="/assets/js/init.js"></script>
     <script src="/assets/js/page-load.js"></script>
