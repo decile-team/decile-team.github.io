@@ -1,239 +1,467 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-    <meta name="generator" content="Gatsby 2.22.17" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-react-helmet="true">Decile | Workshop</title>
-    <meta data-react-helmet="true" charSet="utf-8" />
-    <meta data-react-helmet="true" name="viewport" content="width=device-width, initialScale=1.0" />
-    <meta data-react-helmet="true" name="description" content="An ultra customizable generic theme for Stackbit" />
-    <meta name="viewport" content="width=1200">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="addon.css">
-    <script type="text/javascript" src="../assets/js/jquery-1.5.min.js"></script>
+    <title>Decile Workshop</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Bootstrap Scripts -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- <body onload="loadfunction()"> -->
+
+<body>
+
     <script>
-        function convertDate(dateInput){
-            var date = new Date(dateInput);
-            alert(date.toString());
+        function loadfunction() {
+            document.querySelector("#pre").style.display = "none";
+            document.querySelector("#lay").style.display = "none";
+            document.querySelector("#vis").style.display = "none";
         }
     </script>
-</head>
-<body>
-    <div id="___gatsby">
-        <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
-            <div id="site-wrap" class="site">
-                
-                <header class="site-header ">
-                    <nav class="navbar navbar-expand-sm bg-light navbar-light ">
 
-                        <img class="navbar-brand " src="../images/DECILE Logo.svg" alt="Logo" style="height:80px;">
+    <!-- Section 1 -->
 
-                        <ul class="navbar-nav ml-auto">
- 
-                            <a class="nav-link" href="../">Home</a> 
 
-                            <a class="nav-link" href="/workshop/"><strong class="addon-highlighted-text" style="opacity: 0.5;">Workshop</strong></a>
 
-                        </ul>
-                      </nav>
-                </header>
-                <main id="content" class="site-content">
-                    <section id="workshops" class="section hero bg-image section--padding">
-                        <div class="container container--lg">
-                            <div id="workshop-card" class="addon-container-card">
-                                <div class="addon-card-header">
-                                  {WorkshopTitle}
-                                </div>
-                                <div class="addon-card-body">
-                                    <p class="addon-card-text">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Earum molestias eveniet quisquam veniam praesentium aliquam molestiae, 
-                                        sint itaque numquam, laboriosam quam architecto eaque, libero cupiditate autem odio quos delectus facilis.
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Earum molestias eveniet quisquam veniam praesentium aliquam molestiae, 
-                                        sint itaque numquam, laboriosam quam architecto eaque, libero cupiditate autem odio quos delectus facilis.
-                                    </p>
-                                    
-                                    <br>
-                                    <div class="addon-card-header">Schedule</div>
-                                    <table class="addon-table">
-                                        <colgroup>
-                                            <col style="width:20%">
-                                            <col style="width:50%">
-                                            <col style="width:30%">
-                                          </colgroup> 
-                                        <thead>
-                                            <tr>
-                                                <th>Time</th>
-                                                <th>Description</th>
-                                                <th>Speaker</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td colspan="100" class="addon-rowgrp"><strong>Day 1</strong></td>
-                                            </tr>
-                                            <tr>
-                                                <td>HH:MM</td>
-                                                <td>Topic to be discussed by the speaker</td>
-                                                <td>Speaker(s)</td>
-                                            </tr>
-                                            <tr>
-                                                <td>HH:MM</td>
-                                                <td>Topic to be discussed by the speaker</td>
-                                                <td>Speaker(s)</td>
-                                            </tr>
-                                            <tr>
-                                                <td>HH:MM</td>
-                                                <td>Topic to be discussed by the speaker</td>
-                                                <td>Speaker(s)</td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="100" class="addon-rowgrp"><strong>Day 2</strong></td>
-                                            </tr>
-                                            <tr>
-                                                <td>HH:MM</td>
-                                                <td>Topic to be discussed by the speaker</td>
-                                                <td>Speaker(s)</td>
-                                            </tr>
-                                            <tr>
-                                                <td>HH:MM</td>
-                                                <td>Topic to be discussed by the speaker</td>
-                                                <td>Speaker(s)</td>
-                                            </tr>
-                                            <tr>
-                                                <td>HH:MM</td>
-                                                <td>Topic to be discussed by the speaker</td>
-                                                <td>Speaker(s)</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <a href="register.html" class="btn btn--secondary" id="addon-register-btn">Register Now</a>
-                                </div>
-                            </div> 
-                            <hr>
-                            <div id="speaker-card" class="addon-container-card">
-                                <div class="addon-card-header">
-                                Speakers
-                                </div>
-                                <div id="speaker" class="addon-grid-right-weighted">
-                                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg"
-                                    alt="Hero placeholder image"
-                                    class="addon-avatar"/>
-                                    <div>
-                                        <h5 class="addon-card-title"><strong>{Person}</strong></h5> 
-                                        <p class="addon-card-text">Information about the author. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo officia deserunt atque quae illo minima dolore maiores inventore ut iusto, consectetur unde velit. Optio eveniet obcaecati quam nulla, eum qui.</p>
-                                    </div>
-                                </div>
-                                <div id="speaker" class="addon-grid-right-weighted">
-                                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg"
-                                    alt="Hero placeholder image"
-                                    class="addon-avatar"/>
-                                    <div>
-                                        <h5 class="addon-card-title"><strong>{Person}</strong></h5> 
-                                        <p class="addon-card-text">Information about the author. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo officia deserunt atque quae illo minima dolore maiores inventore ut iusto, consectetur unde velit. Optio eveniet obcaecati quam nulla, eum qui.</p>
-                                    </div>
-                                </div>
-                                <div id="speaker" class="addon-grid-right-weighted">
-                                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg"
-                                    alt="Hero placeholder image"
-                                    class="addon-avatar"/>
-                                    <div>
-                                        <h5 class="addon-card-title"><strong>{Person}</strong></h5> 
-                                        <p class="addon-card-text">Information about the author. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo officia deserunt atque quae illo minima dolore maiores inventore ut iusto, consectetur unde velit. Optio eveniet obcaecati quam nulla, eum qui.</p>
-                                    </div>
-                                </div>
-                                <div id="speaker" class="addon-grid-right-weighted">
-                                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg"
-                                    alt="Hero placeholder image"
-                                    class="addon-avatar"/>
-                                    <div>
-                                        <h5 class="addon-card-title"><strong>{Person}</strong></h5> 
-                                        <p class="addon-card-text">Information about the author. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo officia deserunt atque quae illo minima dolore maiores inventore ut iusto, consectetur unde velit. Optio eveniet obcaecati quam nulla, eum qui.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                            <div id="information-card" class="addon-container-card">
-                                
-                                <p class="addon-card-header addon-highlighted-text"><strong>Important Dates</strong></p>
-                                <p class="addon-smaller-text">Click on the <strong>Date</strong> or <strong>Time</strong> mentioned below to get your local time.</p>
-                                <ul class="addon-highlighted-text">
-                                    <li>Workshop Dates: <strong><a href="#date" noreferer onclick="convertDate('8/26/2021 4:30:00 AM UTC')">August 26th</a> to <a noreferer href="#date" onclick="convertDate('8/28/2021 4:30:00 AM UTC')">August 28th</a>, 2021 UTC</strong></li>
-                                    <li>Workshop Time : <strong><a href="#schedule" noreferer onclick="convertDate('8/26/2021 4:30:00 AM UTC')">4:30AM UTC</a>-<a href="#schedule" noreferer onclick="convertDate('8/26/2021 12:30:00 PM UTC')">12:30PM UTC</a></strong></li>
-                                    <li>Registration Closes On : <strong><a href="#registration-deadline" noreferer onclick="convertDate('8/25/2021 06:29:59 PM UTC')">August 25th</a> UTC</strong></li>
-                                </ul>
-                                <p class="addon-card-header"><strong>Fees</strong></p>
-                                <ul>
-                                    <li><strong>FREE OF COST</strong></li>
-                                </ul>
-                                <p class="addon-card-header">Venue</p>
-                                <ul>
-                                    <li><strong>Virtual Meet</strong></li>
-                                </ul>
-                                <a href="register.html">Register now?</a>
-                            </div>
-                            <hr>
-                            <div id="organizers-card" class="addon-container-card">
-                                <section  class="container " style="padding-bottom: 2%; ">
-                                    <div style="margin: auto;">
-                                        <p class="addon-card-header">Organizers</p> 
-                                        <div class="addon-grid-3" style="padding-bottom: 4%;">
-                                            <div class="box person ">
-                                                <a href="https://sites.google.com/view/rishabhiyer">
-                                                <div class="image round">
-                                                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" alt="Person 2" />
-                                                </div>
-                                                <h4  style="padding-bottom:4% ;" >{Person}</h4>
-                                                <p>{Designation}</p>
-                                                </a>
-                                            </div>
-                                            <div class="box person">
-                                                <a href="https://www.cse.iitb.ac.in/~ganesh/">
-                                                <div class="image round">
-                                                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" alt="Person 3" />
-                                                </div>
-                                                <h4 style="padding-bottom:4% ;">{Person}</h4>
-                                                <p>{Designation}</p>
-                                                </a>
-                                            </div>
-                                            <div class="box person">
-                                                <a href="https://www.linkedin.com/in/pankaj-singh-b000894a/">
-                                                <div class="image round">
-                                                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" alt="Person 3" />
-                                                </div>
-                                                <h4 style="padding-bottom:4% ;">{Person}</h4>
-                                                <p>{Designation}</p>
-                                                <p></p>
-                                                </a>
-                                            </div>
-                                            <div class="box person ">
-                                                <a href="https://sites.google.com/view/rishabhiyer">
-                                                <div class="image round">
-                                                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" alt="Person 2" />
-                                                </div>
-                                                <h4  style="padding-bottom:4% ;" >{Person}</h4>
-                                                <p>{Designation}</p>
-                                                </a>
-                                            </div>
-                                        </div>
-                                </section>
-                            </div>
-                            <div id="faq-card" class="addon-container-card">
-                                
-                                <p class="addon-card-header"><strong>FAQ</strong></p>
-                                <ul>
-                                    <li><a href="faqs/question1.html">Question1</a></li>
-                                    <li><a href="faqs/question2.html">Question2</a></li>
-                                    <li><a href="faqs/question3.html">Question3</a></li>
-                                </ul>
-                                <br>
-                            </div>
-                        </div>
-                    </section>
-                </main>
+    <div class="container-fluid border-bottom">
+
+        <div class="container nav-container">
+            <!-- Nav Bar -->
+
+            <nav class="navbar navbar-expand-lg">
+
+                <a class="navbar-item" href="/">
+                    <img class="lp-badge" src="https://decile.org/images/DECILE%20Logo.svg" alt="logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+                    <span class="navbar-toggler-icon">
+                        <i class="fas fa-bars" style="color:var(--black-color-3); font-size:28px;"></i>
+                    </span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#workshop-about">About Workshop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#workshop-schedule">Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Organizers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-us">Contact Us</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+
+
+    </div>
+
+    <div class="container align-text-bottom text-center mt-3 pt-3 mb-4 pb-sm-1" id="workshop-rsvp">
+        <p class="display-4">DECILE WORKSHOP</p>
+        <p class="h4">April 30th &amp; May 1st, 2022</p>
+        <p class="h4">JOIN US</p>
+        <p>
+            <a href="https://forms.gle/wCTeGzqQh4scpRUN7" target="_blank">
+                <button class="btn btn-primary rounded-pill px-4 py-2">
+                    REGISTER HERE
+                </button>
+            </a>
+
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col col-12  bg-light bg-gradient">
+                <div class="px-5 pb-3" id="workshop-about">
+                    <p class="h4 py-3 text-lg-center">About DECILE and the Workshop</p>
+                    <p class="fs-6 about-para">
+                        Today, Deep Learning is nearing human performance in a wide range of domains including computer
+                        vision and image understanding, natural language processing, speech recognition, machine
+                        translation, and many others. As a result, increasingly, deep learning
+                        is being used in industry to solve hard business challenges. But one of the biggest challenges
+                        faced in mainstream applications is efficiency and robustness. With the growth of computers and
+                        mobile devices, there is substantial
+                        growth in data. Machine learning tasks often involve using larger neural networks to achieve
+                        good accuracy which requires high-end GPUs, massive datasets which are expensive in terms of
+                        both time and cost (both compute cost and
+                        labeling cost). The mission statement of DECILE is to build tools and platforms for enabling
+                        Data Efficient Machine Learning. We develop tools which aim at, a) Reducing the labeling effort
+                        required to train deep models, b) Reduce
+                        the compute requirements (time, cost, and energy) of training deep models, and c) Make deep
+                        learning robust and fair.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="col col-12 mt-3">
+
+                <div class="px-3" id="workshop-key">
+                    <p class="h4 pb-3 mt-2">Workshop Key Takeaways</p>
+                    <ol class="list-group list-group-numbered workshop-list">
+                        <li class="list-group-item">How to learn the model's labels and compute efficiently, robustly,
+                            and fairly without sacrificing the accuracy of the model? For this, ML has to go beyond just
+                            optimizing for accuracy!</li>
+                        <li class="list-group-item">How is the industry tackling this challenge and doing Data-Efficient
+                            Learning?
+                        </li>
+                        <li class="list-group-item">Talk on applications of DECILE in several domains including automl,
+                            self-driving cars, medical imaging, speech recognition, NLP, and many others.</li>
+                        <li class="list-group-item">Hands-on session using PyTorch for Data-Efficient Learning with the
+                            following State-of-the-Art toolkits:
+                            <ol class="list-group list-group-numbered workshop-list mt-2">
+                                <li class="list-group-item"><mark>CORDS</mark> for Coresets and Data Subset Selection
+                                </li>
+                                <li class="list-group-item"><mark>DISTIL</mark> for Active Learning </li>
+                                <li class="list-group-item"><mark>SUBMODLIB</mark> for Submodular Optimization </li>
+                                <li class="list-group-item"><mark>SPEAR</mark> for Semi-supervised Data Programming
+                                </li>
+                            </ol>
+
+                        </li>
+
+                    </ol>
+                </div>
+            </div>
+
+            <div class="col col-12 mt-4">
+                <div class="row pt-1">
+                    <div class="ps-5" id="workshop-about">
+                        <p class="h4 pb-3 text-lg-center">Who should attend this Workshop?</p>
+                        <p class="about-para">
+                            This workshop invites participation from individuals working in the industry, academia, and
+                            students with experience and/or interest in Machine Learning, Deep Learning, and its
+                            efficient application for solving problems quickly. If you work in industry
+                            and want to learn how to construct efficient, resilient, and computationally efficient
+                            models with less training time and less expense, this is the workshop for you. This session
+                            is for academics who wish to learn how to design
+                            efficient, resilient, and computationally efficient models with limited GPU resources.
+                        </p>
+
+                    </div>
+                </div>
             </div>
         </div>
+
+
+        <!-- Days -->
+        <div class="row  py-3 my-5 schedule bg-gradient" id="workshop-schedule">
+            <p class="h1 diplay-4 text-info text-center mb-4">SCHEDULE</p>
+            <div class="col-lg-12 mb-6" id="Friday, Nov 13th">
+                <h4 class="mt-0 mb-6 op-8">
+                    Saturday, April 30th, 2022
+                </h4>
+
+                <ul class="list-timeline list-timeline-primary p-0 text-dark">
+                    <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                        <p class="my-0  flex-fw"><span class="op-8">30 Mins</span> - Introduction on <a
+                                href="https://github.com/decile-team"> <img
+                                    src="https://decile.org/images/DECILE%20Logo.svg" width="150px" height="40px"
+                                    style="margin-left: 7px"></a></p>
+                        <p class="my-0 flex-fw"><span class="text-inverse op-8">By:
+                                <span class="text-primary"><a href="https://www.cse.iitb.ac.in/~ganesh/"
+                                        target="blank">Prof. Ganesh Ramakrishnan</a></span></p>
+                    </li>
+                    <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                        <p class="my-0 flex-fw">
+                            <span class=" op-8">1 Hour 30 mins- Introduction to
+                                <img src="data:image/png;base64,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"
+                                    class="img-fluid" alt="PYTOCH" width="150px" height="40px" style="margin-left: 7px">
+                            </span>
+                        </p>
+                        <p class="my-0 flex-fw">
+                            By: <span class="text-primary"><a href="http://personal.utdallas.edu/~snk170001/"
+                                    target="blank">Suraj Kothawade</a>, <a href="https://krishnatejakillamsetty.me/"
+                                    target="blank">Krishnateja Killamsetty</a> and <a href="#">Nathan Beck</a></span>
+                        </p>
+                    </li>
+                    <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                        <p class="my-0 flex-fw">
+                            <span class=" op-8">1 Hour - Introduction to
+                                <a href="https://github.com/decile-team/cords"> <img
+                                        src="https://decile.org/images/CORDS%20Logo.svg" class="img-fluid" alt="PYTOCH"
+                                        width="150px" height="40px" style="margin-left: 7px"> </a>
+                            </span>
+                        </p>
+                        <p class="my-0 flex-fw">
+                            By: <span class="text-primary"><a href="https://krishnatejakillamsetty.me/"
+                                    target="blank">Krishnateja Killamsetty</a> and <a
+                                    href="https://scholar.google.com/citations?user=4JXFWTwAAAAJ&hl=en"
+                                    target="blank">Durga Sivasubramanian</a>
+                            </span></p>
+                    </li>
+
+                    <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                        <p class="my-0 flex-fw">
+                            <span class=" op-8">30 Mins-Application of CORDS:AutoML
+
+                            </span>
+                        </p>
+                        <p class="my-0 flex-fw">
+                            By: <span class="text-primary">Akriti and Abhishek</span></p>
+                    </li>
+                    <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                        <p class="my-0 flex-fw">
+                            <span class=" op-8">1 Hour- <a href="https://github.com/decile-team/submodlib"><img
+                                        src="https://decile.org/images/Submodlib%20Logo.png" width="150px" height="40px"
+                                        style="margin-left: 7px"></a> and <img
+                                    src="https://decile.org/images/Trust%20Logo.svg" width="150px" height="40px"
+                                    style="margin-left: 7px">
+
+                            </span>
+                        </p>
+                        <p class="my-0 flex-fw">
+                            By: <span class="text-primary"><a href="http://personal.utdallas.edu/~snk170001/"
+                                    target="blank">Suraj Kothawade</a></span></p>
+                    </li>
+                    <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                        <p class="my-0 flex-fw">
+                            <span class=" op-8">30 Mins-Targeted Learning for Self-driving cars
+
+                            </span>
+                        </p>
+                        <p class="my-0 flex-fw">
+                            By: <span class="text-primary"><a href="http://personal.utdallas.edu/~snk170001/"
+                                    target="blank">Suraj Kothawade</a></span></p>
+                    </li>
+                    <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                        <p class="my-0 flex-fw">
+                            <span class=" op-8">30 Mins-Applications of Speech Recognition(Personalization)
+
+                            </span>
+                        </p>
+                        <p class="my-0 flex-fw">
+                            By: <span class="text-primary"><a href="https://www.cse.iitb.ac.in/~ayusham/"
+                                    target="blank">Ayush Maheshwari</a></span></p>
+
+
+                    </li>
+                </ul>
+
+            </div>
+
+            <br>
+
+            <div class="col-lg-12 mb-6" id="contact-us">
+                <h4 class="mt-0 mb-6 op-8">
+                    Sunday, May 1st, 2022
+                </h4>
+                <ul class="list-timeline list-timeline-primary p-0 text-dark">
+                    <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                        <p class="my-0 flex-fw"><span class="text-inverse op-8">1 Hour</span> - <a
+                                href="https://github.com/decile-team/distil"><img
+                                    src="https://decile.org/images/DISTIL%20Logo.svg" width="150px" height="40px"
+                                    style="margin-left: 7px"></a></p>
+                        <p class="my-0 flex-fw">
+                            By: <span class="text-primary"><a href="#">Nathan Beck</a> and <a
+                                href="https://scholar.google.com/citations?user=4JXFWTwAAAAJ&hl=en"
+                                target="blank">Durga Sivasubramanian</a></span></p>
+
+                    </li>
+                    <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                        <p class="my-0 flex-fw"><span class="text-inverse op-8">30 Mins</span> - Targeted learning for
+                            Medical
+                            Imaging</p>
+                        <p class="my-0 flex-fw">
+                            By: <span class="text-primary"><a href="https://sites.google.com/view/venkatapathy/home"
+                                    target="blank">Dr Venkatapathy Subramanian</a></span></p>
+                    </li>
+                    <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                        <p class="my-0 flex-fw"><span class="text-inverse op-8">30 Mins</span> - Active Learning to
+                            Reduce Labelling Costs</p>
+                        <p class="my-0 flex-fw">
+                            By: <span class="text-primary"><a href="http://personal.utdallas.edu/~snk170001/"
+                                    target="blank">Suraj Kothawade</a></span></p>
+
+                    </li>
+                    <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                        <p class="my-0 flex-fw"><span class="text-inverse op-8">1 Hour</span> - <a
+                                href="https://github.com/decile-team/spear"><img
+                                    src="https://decile.org/images/SPEAR%20Logo.svg" width="150px" height="40px"
+                                    style="margin-left: 7px"></a></p>
+                        <p class="my-0 flex-fw">
+                            By: <span class="text-primary"><a href="https://www.cse.iitb.ac.in/~ayusham/"
+                                    target="blank">Ayush Maheshwari</a></span></p>
+                    </li>
+                    <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                        <p class="my-0 flex-fw"><span class="text-inverse op-8">30 mins-</span> Application of SPEAR</p>
+                        <p class="my-0 flex-fw">
+                            By: <span class="text-primary">Mayank</span></p>
+                    </li>
+                    <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                        <p class="my-0 flex-fw"><span class="text-inverse op-8">30 mins-</span> Vision and Future of
+                            DECILE</p>
+                        <p class="my-0 flex-fw">
+                            By: <span class="text-primary"><a href="https://www.rishiyer.com/" target="blank">Prof.
+                                    Rishabh Iyer</a> </span></p>
+                    </li>
+
+
+
+
+                    <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
+                        <p class="my-0 flex-fw"><span class="text-inverse op-8"></span>1 Hour- Discussion on Project
+                            Ideas and
+                            Hackathon</p>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
     </div>
+
+    <div id="team" class='container container-team mx-auto mt-5 col-md-10 mt-100'>
+        <div class="header">
+            <div class="title-team">Workshop Organizers</div>
+
+        </div>
+        <div class="row justify-content-center pb-5">
+            <div class="card col-md-3 mt-100">
+                <div class="card-content">
+                    <div class="card-body p-0">
+                        <div class="profile"> <img src="images/ganeshramakrishnan.png"> </div>
+                        <a href="https://www.cse.iitb.ac.in/~ganesh/">
+                            <div class="card-title mt-4"> Prof. Ganesh Ramakrishnan<br /> <small>Institute Chair
+                                    Professor,
+                                    CSE, IIT Bombay
+                                </small>
+                            </div>
+                        </a>
+                        <!--<div class="card-subtitle">
+                            <p> <small class="text-muted"> I expected anything less than perfect for the team of
+                                    experts. They are the best team ever! </small> </p>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-md-3 mt-100">
+                <div class="card-content">
+                    <div class="card-body p-0">
+                        <div class="profile"> <img src="images/rishabh1.png"> </div>
+                        <a href="https://www.rishiyer.com/">
+                            <div class="card-title mt-4"> Prof Rishabh Iyer<br /> <small>Assistant Professor, University
+                                    of Texas Dallas</small>
+                            </div>
+                        </a>
+                        <!--<div class="card-subtitle">
+                            <p> <small class="text-muted"> I expected anything less than perfect for the team of
+                                    experts. They are the best team ever! </small> </p>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-md-3 mt-100">
+                <div class="card-content">
+                    <div class="card-body p-0">
+                        <div class="profile"> <img src="images/venkat.png"> </div>
+                        <a href="https://sites.google.com/view/venkatapathy/home">
+                            <div class="card-title mt-4">Dr Venkatapathy Subramanian<br /> <small>Principal Scientist,
+                                    IIT Bombay</small>
+                            </div>
+                        </a>
+                        <!--<div class="card-subtitle">
+                            <p> <small class="text-muted"> I expected anything less than perfect for the team of
+                                    experts. They are the best team ever! </small> </p>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-md-3 mt-100" style="margin-top: 30px;">
+                <div class="card-content">
+                    <div class="card-body p-0">
+                        <div class="profile"> <img src="images/suraj.png"> </div>
+                        <a href="http://personal.utdallas.edu/~snk170001/">
+                            <div class="card-title mt-4"> Suraj Kothawade<br /> <small>PhD Student, University
+                                    of Texas Dallas</small>
+                            </div>
+                        </a>
+                        <!--<div class="card-subtitle">
+                            <p> <small class="text-muted"> I expected anything less than perfect for the team of
+                                    experts. They are the best team ever! </small> </p>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-md-3 mt-100" style="margin-top: 30px;">
+                <div class="card-content">
+                    <div class="card-body p-0">
+                        <div class="profile"> <img src="images/krishna.png"> </div>
+                        <a href="https://krishnatejakillamsetty.me/">
+                            <div class="card-title mt-4"> Krishnateja Killamsetty<br /> <small>PhD Student, University
+                                    of Texas Dallas</small>
+                            </div>
+                        </a>
+                        <!--<div class="card-subtitle">
+                            <p> <small class="text-muted"> I expected anything less than perfect for the team of
+                                    experts. They are the best team ever! </small> </p>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Credits: https://webdesignerwall.com/wdw-snippet/bootstrap-4-our-team-section-with-round-profile-images -->
+
+
+    <footer class="foooter py-2 border-top">
+        <div class="container">
+            <p> For further queries, please contact : <span class="email"> venkat.s.iyer@gmail.com</span></p>
+            <a href="https://decile.org/"><img src="https://decile.org/images/DECILE%20Logo.svg" width="200px"
+                    height="50px"></a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="contri.js"></script>
 </body>
+
 </html>
