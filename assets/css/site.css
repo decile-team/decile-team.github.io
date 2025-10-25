@@ -68,6 +68,137 @@ h2{font-size:1.4rem}
 .paper .paper-authors{color:var(--muted);font-size:0.95rem}
 .paper .paper-conference{color:#94a3b8;font-size:0.85rem}
 
+/* Needs Section - Clean Card Layout */
+.needs-section{padding:3rem 0}
+.needs-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+  gap:1.5rem;
+  margin-top:1rem;
+}
+.need-card{
+  background:rgba(255,255,255,0.1);
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,0.2);
+  border-radius:12px;
+  padding:1.75rem 1.5rem;
+  text-align:center;
+  transition:transform 0.2s ease, box-shadow 0.2s ease;
+}
+.need-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 8px 24px rgba(0,0,0,0.15);
+  background:rgba(255,255,255,0.15);
+}
+.need-icon{
+  font-size:2.5rem;
+  margin-bottom:0.75rem;
+  filter:drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+.need-card h3{
+  color:#fff;
+  font-size:1.1rem;
+  margin:0.5rem 0 0.75rem;
+  font-weight:700;
+}
+.need-card p{
+  color:rgba(255,255,255,0.9);
+  font-size:0.9rem;
+  line-height:1.5;
+  margin:0;
+}
+
+@media(max-width:640px){
+  .needs-grid{
+    grid-template-columns:1fr;
+    gap:1rem;
+  }
+  .need-card{padding:1.5rem 1.25rem}
+}
+
+/* MeLM Research Section */
+.section--melm{
+  padding:4rem 0;
+  background:linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+}
+
+.melm-threads-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+  gap:2rem;
+  margin-top:2rem;
+}
+
+.melm-thread-card{
+  background:#fff;
+  border:1px solid #e5e7eb;
+  border-radius:12px;
+  padding:2rem 1.75rem;
+  transition:all 0.3s ease;
+  box-shadow:0 1px 3px rgba(0,0,0,0.05);
+}
+
+.melm-thread-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 12px 24px rgba(0,0,0,0.1);
+  border-color:#0b5fff;
+}
+
+.melm-thread-icon{
+  font-size:2.5rem;
+  margin-bottom:1rem;
+  display:inline-block;
+}
+
+.melm-thread-card h3{
+  color:#0f1724;
+  font-size:1.15rem;
+  font-weight:700;
+  margin:0.75rem 0 1rem;
+  line-height:1.4;
+}
+
+.melm-thread-card > p{
+  color:#6b7280;
+  font-size:0.95rem;
+  line-height:1.6;
+  margin-bottom:1.25rem;
+}
+
+.melm-research-areas{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.melm-research-areas li{
+  color:#4b5563;
+  font-size:0.875rem;
+  padding:0.5rem 0;
+  padding-left:1.5rem;
+  position:relative;
+  line-height:1.5;
+}
+
+.melm-research-areas li:before{
+  content:"▸";
+  color:#0b5fff;
+  position:absolute;
+  left:0;
+  font-weight:700;
+}
+
+@media(max-width:768px){
+  .melm-threads-grid{
+    grid-template-columns:1fr;
+    gap:1.5rem;
+  }
+  .melm-thread-card{
+    padding:1.5rem 1.25rem;
+  }
+}
+
+
 /* Footer tweaks */
 .site-footer{background:#0f1724;color:#e6eef8;padding:2rem 1rem}
 .site-footer a{opacity:0.9}

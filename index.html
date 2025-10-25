@@ -46,6 +46,7 @@
 
                         <div class="navbar__menu" id="main-nav">
                             <ul class="navbar__list menu navbar-nav ml-auto">
+                                <li class="navbar__item"><a class="nav-link" href="#MeLM">MeLM</a></li>
                                 <li class="navbar__item"><a class="nav-link" href="#Team">Team</a></li>
                                 <li class="navbar__item"><a class="nav-link" href="#Research">Research</a></li>
                                 <li class="navbar__item"><a class="nav-link" href="/workshop/">Workshop <sup id="blink">new</sup></a></li>
@@ -102,45 +103,39 @@
                             </div>
                         </div>
                     </section>
-                    <section class="section hero inverse bg-blue">
+                    <section class="section needs-section inverse bg-blue">
                         <div class="container container--lg">
                             <div class="container container--md align-center">
-
+                                <h2 class="section__title">Why DECILE?</h2>
+                                <p style="margin-bottom: 2rem; opacity: 0.9;">Addressing critical challenges in modern AI and deep learning</p>
                             </div>
-                            <!-- <section  class="container " style="padding-bottom: 2%; "> -->
-                            <div class="container container--l">
-                                <div>
-                                    <h2 class="container container--md align-center section__title">Need for DECILE</h2>
+                            
+                            <div class="needs-grid">
+                                <div class="need-card">
+                                    <div class="need-icon">💰</div>
+                                    <h3>Reduce Training Costs</h3>
+                                    <p>State-of-the-art deep learning requires expensive GPUs and cloud infrastructure, costing thousands per experiment.</p>
                                 </div>
-                                <div class="flex flex--middle flex--center flex--col-2 ">
-
-
-                                    <div class="e2-35 x-col gc_ai_app gc_ai_build one">
-                                        <div class="e2-36 x-text align-center-icon"><br><br>
-                                            Staggering Training Costs of Deep Learning
-                                        </div>
-                                    </div>
-                                    <div class="e2-37 x-col gc_ai_app gc_ai_dev two">
-                                        <div class="e2-38 x-text align-center-icon"><br><br>
-                                            Labeling Large Datasets is Expensive
-                                        </div>
-                                    </div>
-                                    <div class="e2-39 x-col gc_ai_app gc_ai_data three">
-                                        <div class="e2-40 x-text align-center-icon"><br><br>
-                                            Noise and Imbalance in Data
-                                        </div>
-                                    </div>
-                                    <div class="e2-41 x-col gc_ai_app gc_ai_fuel four">
-                                        <div class="e2-42 x-text align-center-icon"><br><br>
-                                            Human Consumption and Data Overload
-                                        </div>
-                                    </div>
-
-                                    <!-- </section> -->
-
+                                
+                                <div class="need-card">
+                                    <div class="need-icon">🏷️</div>
+                                    <h3>Lower Labeling Expenses</h3>
+                                    <p>Manual data annotation is time-consuming and expensive, often requiring domain experts for quality labels.</p>
                                 </div>
-
+                                
+                                <div class="need-card">
+                                    <div class="need-icon">⚖️</div>
+                                    <h3>Handle Noisy Data</h3>
+                                    <p>Real-world datasets contain noise, outliers, and class imbalances that degrade model performance.</p>
+                                </div>
+                                
+                                <div class="need-card">
+                                    <div class="need-icon">⚡</div>
+                                    <h3>Accelerate Development</h3>
+                                    <p>Training on massive datasets takes days or weeks, slowing down research iteration and deployment cycles.</p>
+                                </div>
                             </div>
+                        </div>
                     </section>
 
                     <section id="Modules" class="section ">
@@ -275,6 +270,78 @@
                         <div class="d-flex">
                             <hr class="my-auto flex-grow-1">
                             <!-- <div class="px-4">CORDS</div> -->
+                        </div>
+                    </section>
+
+                    <!-- MeLM Section -->
+                    <section id="MeLM" class="section section--melm">
+                        <div class="container container--lg">
+                            <div class="align-center" style="margin-bottom: 3rem;">
+                                <h2 class="section__title">ML Efficiency for Large Models (MeLM)</h2>
+                                <p style="color: #6b7280; max-width: 900px; margin: 1rem auto; line-height: 1.7;">
+                                    Today's world needs orders of magnitude more efficient ML to address environmental and energy crises, optimize resource consumption and improve sustainability. 
+                                    With the end of Moore's Law and Dennard Scaling, we can no longer expect more and faster transistors for the same cost and power budget.
+                                </p>
+                                <p style="color: #6b7280; max-width: 900px; margin: 1rem auto; line-height: 1.7;">
+                                    <strong>PI: Ganesh Ramakrishnan</strong>
+                                </p>
+                            </div>
+
+                            <div class="melm-threads-grid">
+                                <article class="melm-thread-card">
+                                    <div class="melm-thread-icon">🎯</div>
+                                    <h3>Optimizing Large Language Models through Singular Vector-Based Fine-Tuning</h3>
+                                    <p>Advancing parameter-efficient fine-tuning techniques by exploring singular vector-guided updates to adapt large-scale pre-trained models for specific downstream tasks.</p>
+                                    <ul class="melm-research-areas">
+                                        <li>Parameter Efficiency in Model Fine-Tuning</li>
+                                        <li>Comparison and Evaluation of PEFT Techniques</li>
+                                        <li>Task-Specific Sparsity Patterns and Performance</li>
+                                        <li>Scalability and Adaptation in Large Language Models</li>
+                                    </ul>
+                                </article>
+
+                                <article class="melm-thread-card">
+                                    <div class="melm-thread-icon">🧠</div>
+                                    <h3>Pathway to Algorithmic Generalization (Memory-Augmented Transformers)</h3>
+                                    <p>Exploring memory-augmented Transformers (Memformers) as adaptive optimizers by implementing Linear First-Order Optimization Methods (LFOMs).</p>
+                                    <ul class="melm-research-areas">
+                                        <li>Leveraging Memory Augmentation for Advanced Optimization</li>
+                                        <li>Comparative Performance Against Classical Optimization Techniques</li>
+                                        <li>Transformers as Meta-Optimizers</li>
+                                        <li>Theoretical Foundations and Convergence Analysis</li>
+                                    </ul>
+                                </article>
+
+                                <article class="melm-thread-card">
+                                    <div class="melm-thread-icon">📐</div>
+                                    <h3>Geodesic Sharpness in Transformers</h3>
+                                    <p>Advancing symmetry-aware sharpness metrics to improve generalization predictions for Transformer models by leveraging Riemannian geometry.</p>
+                                    <ul class="melm-research-areas">
+                                        <li>Developing Symmetry-Invariant Sharpness Measures</li>
+                                        <li>Comparative Analysis of Geodesic Sharpness</li>
+                                        <li>Evaluating Transformer Symmetries in Attention Mechanisms</li>
+                                        <li>Potential for Sharpness-Aware Optimization</li>
+                                    </ul>
+                                </article>
+
+                                <article class="melm-thread-card">
+                                    <div class="melm-thread-icon">⚙️</div>
+                                    <h3>Efficiently Adapting Pre-Trained Models for Multiple Tasks</h3>
+                                    <p>Investigating task arithmetic as an efficient technique for editing pre-trained models, focusing on adding, combining, or removing task-specific capabilities with minimal interference.</p>
+                                    <ul class="melm-research-areas">
+                                        <li>Developing Task Arithmetic for Efficient Model Adaptation</li>
+                                        <li>Investigating Weight Disentanglement Mechanisms</li>
+                                        <li>Examining Kernel-Based Approaches to Task Localization</li>
+                                        <li>Understanding the Role of Pre-Training in Task Disentanglement</li>
+                                    </ul>
+                                </article>
+                            </div>
+
+                            <div class="align-center" style="margin-top: 2rem;">
+                                <a href="https://sites.google.com/view/melm-iitb/home" target="_blank" class="btn btn--secondary">
+                                    Visit MeLM Research Group →
+                                </a>
+                            </div>
                         </div>
                     </section>
 
