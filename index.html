@@ -41,16 +41,28 @@
 
                 <header class="site-header">
                     <nav class="navbar" role="navigation" aria-label="Main navigation">
-                        <a class="navbar__logo" href="/" aria-label="DECILE home"><img src="images/DECILE Logo.svg" alt="DECILE logo" style="height:64px;"></a>
-                        <button class="js-nav-toggle navbar__menu-btn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+                        <a class="navbar__logo" href="/" aria-label="DECILE home">
+                            <img src="images/DECILE Logo.svg" alt="DECILE logo" style="height:56px;">
+                        </a>
+                        
+                        <button class="js-nav-toggle navbar__menu-btn" aria-label="Toggle navigation" aria-expanded="false">
+                            <span class="navbar__menu-icon"></span>
+                        </button>
 
                         <div class="navbar__menu" id="main-nav">
-                            <ul class="navbar__list menu navbar-nav ml-auto">
-                                <li class="navbar__item"><a class="nav-link" href="#MeLM">MeLM</a></li>
-                                <li class="navbar__item"><a class="nav-link" href="#Team">Team</a></li>
-                                <li class="navbar__item"><a class="nav-link" href="#Research">Research</a></li>
-                                <li class="navbar__item"><a class="nav-link" href="/workshop/">Workshop <sup id="blink">new</sup></a></li>
-                            </ul>
+                            <div class="navbar__scroller">
+                                <div class="navbar__inner">
+                                    <button class="js-nav-toggle navbar__close-btn btn btn--icon btn--clear" aria-label="Close navigation">
+                                        <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+                                    </button>
+                                    <ul class="navbar__list menu">
+                                        <li class="navbar__item"><a class="nav-link" href="#MeLM">MeLM</a></li>
+                                        <li class="navbar__item"><a class="nav-link" href="#Team">Team</a></li>
+                                        <li class="navbar__item"><a class="nav-link" href="#Research">Research</a></li>
+                                        <li class="navbar__item"><a class="nav-link" href="/workshop/">Workshop <sup id="blink">new</sup></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </nav>
                 </header>
@@ -428,7 +440,7 @@
                     <section class="container " style="padding-bottom: 2%; ">
                         <div class="inner">
                             <div class="flex flex-4 " style="padding-bottom: 4%; ">
-                                <div class="box person ">
+                                <div class="box person">
                                     <a href="https://sites.google.com/view/rishabhiyer">
                                         <div class="image round">
                                             <img src="images/team/Rishabh Iyer.png" alt="Person 2" />
