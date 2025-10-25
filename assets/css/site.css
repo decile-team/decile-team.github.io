@@ -1,0 +1,85 @@
+/* Modern overrides for DECILE lab site
+   - Uses Inter for UI and Merriweather for headings
+   - CSS variables for colors
+   - Lightweight responsive layout improvements
+*/
+:root{
+  --brand-500:#0b5fff; /* primary blue */
+  --muted:#6b7280;
+  --bg:#ffffff;
+  --surface:#f8fafc;
+  --accent:#28aaff;
+  --max-width:1100px;
+}
+
+/* Base typography */
+body{
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:var(--muted);
+  background:var(--bg);
+}
+
+h1,h2,h3{font-family: Merriweather, Georgia, serif; color:#0f1724; margin:0.25em 0 0.5em}
+h1{font-size:2rem}
+h2{font-size:1.4rem}
+
+.container{max-width:var(--max-width); margin:0 auto; padding:1rem}
+
+/* Header */
+.site-header{background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.8)); position:sticky; top:0; z-index:40; backdrop-filter: blur(6px); border-bottom:1px solid rgba(15,23,36,0.06)}
+.navbar{display:flex;align-items:center;gap:1rem;padding:0.5rem 1rem}
+.navbar__logo img{height:56px}
+
+.navbar__menu-btn{display:inline-flex;background:transparent;border:0;font-size:1.25rem;padding:0.5rem;cursor:pointer}
+
+.navbar__menu{margin-left:auto}
+.navbar__list{display:flex;gap:0.75rem;align-items:center}
+.navbar__item a{color:var(--muted);text-decoration:none;padding:0.45rem 0.7rem;border-radius:6px;font-weight:600}
+.navbar__item a:hover{background:var(--surface);color:var(--brand-500)}
+
+/* Mobile nav open state */
+.js-nav-open .navbar__menu{position:fixed;inset:60px 0 0 0;background:var(--bg);padding:1rem;display:block;overflow:auto}
+.js-nav-open .navbar__list{flex-direction:column;gap:0.25rem}
+
+@media(min-width:801px){
+  .navbar__menu-btn{display:none}
+  .js-nav-open .navbar__menu{position:static;display:block}
+}
+
+/* Hero */
+.section.hero{padding:2.5rem 0}
+.section__title{color:#0f1724}
+.section__copy p{color:var(--muted);line-height:1.6;font-size:1rem}
+
+/* Modules / cards */
+.section .card{border-radius:10px}
+.btn--secondary{border-radius:8px}
+
+/* Team grid */
+.flex-4{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem}
+.box.person{background:var(--surface);padding:0.9rem;border-radius:10px;text-align:center}
+.box.person .image.round img{width:120px;height:120px;object-fit:cover;border-radius:999px}
+.box.person h4{margin:0.5rem 0 0.25rem;font-size:1rem;color:#0f1724}
+.box.person p{margin:0;font-size:0.9rem;color:var(--muted)}
+
+/* Papers list */
+.paper{padding:0.85rem 0;border-bottom:1px solid rgba(15,23,36,0.04)}
+.paper .paper-title{display:block;color:var(--brand-500);font-weight:700;text-decoration:none}
+.paper .paper-authors{color:var(--muted);font-size:0.95rem}
+.paper .paper-conference{color:#94a3b8;font-size:0.85rem}
+
+/* Footer tweaks */
+.site-footer{background:#0f1724;color:#e6eef8;padding:2rem 1rem}
+.site-footer a{opacity:0.9}
+
+/* Utility */
+.align-center{text-align:center}
+
+/* Small improvements */
+img{max-width:100%;height:auto}
+
+/* Reduce specificity conflicts by using root-level overrides where needed */
+@media(max-width:800px){
+  .section.hero{padding:1.5rem 0}
+  h1{font-size:1.6rem}
+}

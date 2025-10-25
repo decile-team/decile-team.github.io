@@ -11,6 +11,8 @@
     <meta data-react-helmet="true" name="description" content="An ultra customizable generic theme for Stackbit" />
     <meta name="viewport" content="width=1200">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/site.css">
     <script type="text/javascript" src="assets/js/jquery-1.5.min.js"></script>
 
     <script type="text/javascript" src="assets/js/jquery.jcarousel.js"></script>
@@ -37,25 +39,19 @@
         <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
             <div id="site-wrap" class="site">
 
-                <header class="site-header ">
-                    <nav class="navbar navbar-expand-sm bg-light navbar-light ">
+                <header class="site-header">
+                    <nav class="navbar" role="navigation" aria-label="Main navigation">
+                        <a class="navbar__logo" href="/" aria-label="DECILE home"><img src="images/DECILE Logo.svg" alt="DECILE logo" style="height:64px;"></a>
+                        <button class="js-nav-toggle navbar__menu-btn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
 
-                        <img class="navbar-brand " src="images/DECILE Logo.svg" alt="Logo" style="height:80px;">
-
-                        <ul class="navbar-nav ml-auto">
-
-                            <!-- <a class="nav-link" href="/">Home</a>  -->
-
-                            <a class="nav-link" href="#Team">Team</a>
-
-
-                            <a class="nav-link" href="#Research">Research</a>
-
-                            <a class="nav-link" href="/workshop/">Workshop<sup id="blink">new</sup></a>
-
-                        </ul>
+                        <div class="navbar__menu" id="main-nav">
+                            <ul class="navbar__list menu navbar-nav ml-auto">
+                                <li class="navbar__item"><a class="nav-link" href="#Team">Team</a></li>
+                                <li class="navbar__item"><a class="nav-link" href="#Research">Research</a></li>
+                                <li class="navbar__item"><a class="nav-link" href="/workshop/">Workshop <sup id="blink">new</sup></a></li>
+                            </ul>
+                        </div>
                     </nav>
-
                 </header>
                 <main id="content" class="site-content">
                     <!-- <section class="section hero">
