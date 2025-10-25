@@ -1,0 +1,9 @@
+{
+  "name": "decile-publications-updater",
+  "version": "1.0.0",
+  "description": "Auto-update publications from Google Sheets",
+  "main": "update-publications.js",
+  "dependencies": {
+    "googleapis": "^105.0.0"
+  }
+}
